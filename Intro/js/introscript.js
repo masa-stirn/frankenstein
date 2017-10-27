@@ -1,5 +1,5 @@
 //elements
-let castle = document.querySelector(".castle")
+let castle = document.querySelector(".mycastle")
 let professor = document.querySelector(".professor")
 let creature = document.querySelector(".creature")
 let igor = document.querySelector(".igor")
@@ -16,43 +16,65 @@ let rollsound = document.querySelector(".roll");
 
 
 function pageLoad() {
-  bgsound.play;
+    professor.classList.add("hide");
+     creature.classList.add("hide");
+     igor.classList.add("hide");
+  bgsound.play();
     setTimeout(castleGlow, 1000);
     function castleGlow(){
-        castle.classList.add("castleglow");}
-    setTimeout(wolf, 5000);
-    function wolf(){
-        wolfsound.paly();
+     console.log("castle glow")
+ document.getElementById("castleglow").setAttribute("filter", "url(#f1)");
     }
+    setTimeout(wolf, 2000);
+    function wolf(){
+    console.log("wolf sound")
+    wolfsound.play();
+    wolfsound.addEventListener("ended", characterslide)
+    }
+
 };
 
 
-
-
-wolfsound.addEventListner("ended", characterslide)
-
 function characterslide(){
-    professor.classList.add("appearprofessor");
+     professor.classList.remove("hide");
+     professor.classList.add("appearprofessor");
+     creature.classList.remove("hide");
     creature.classList.add("appearcreature");
+     igor.classList.remove("hide");
     igor.classList.add("appearigor");
-    setTimeout(eyeballdrop, 3000);
+
 }
+
+
+setTimeout(eyeballdrop, 5000);
 
 function eyeballdrop(){
     eyeball.classList.add("eyedrop");
+    popsound.play();
 }
 
-eyeball.addEventListner("animationend", eyeballroll)
+eyeball.addEventListener("animationend", showArrow)
+
+/*
+eyeball.addEventListener("animationend", eyeballroll)
 
 function eyeballroll(){
     eyeball.classList.remove("eyedrop");
     eyeball.classList.add("eyeroll");
 }
 
-eyeball.addEventListner("animationend",showArrow)
-
+eyeball.addEventListener("animationend", showArrow)
+*/
 function showArrow(){
+    setTimeout(function(){
     arrow.classList.remove("hide");
-}
+}, 1000);
+
+ setTimeout(function(){
+ document.getElementById("arrow1").setAttribute("filter", "url(#f3)");
+     let linktolab1 = document.querySelector(".linktolab1");
+     linktolab1.classList.remove("hide");
+}, 2000);}
+
 
 pageLoad();

@@ -1,13 +1,10 @@
+/* Castle Glow////////////////////////////////////////*/
 body{
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding:0;
 }
-
-
-
-
 
 
 .background{
@@ -19,8 +16,6 @@ body{
     top: 0;
     left: 0;
     background-size: cover;
-    z-index: -100;
-
 }
 
 svg{
@@ -31,6 +26,7 @@ svg{
     z-index: 1000;
     max-height: 100vh;
 }
+
 
 /*glow animation*/
 .castleglow{
@@ -49,67 +45,93 @@ animation: professorslideout ease-out 1s forwards;
 }
 @keyframes professorslideout {
     from {
-      transform: translateX(20vw) translateY(30vh) scale(0.5);
+     transform: translateX(40vw) translateY(50vh) scale(0.5);
     opacity: 0;
     }
  to {
- transform: translateX(20vw) translateY(30vh);
      opacity: 1;
      }
 }
 
 /*appear creature animation*/
-appearcreature {
+.appearcreature {
 animation: creatureslideout ease-out 1s forwards;
 }
 @keyframes creatureslideout {
     from {
-      transform: translateX(20vw) translateY(30vh) scale(0.5);
+     transform: translateX(30vw) translateY(30vh) scale(0.5);
     opacity: 0;
     }
  to {
- transform: translateX(20vw) translateY(30vh);
      opacity: 1;
      }
 }
 
 /*appear igor animation*/
-appearigor {
+.appearigor {
 animation: igorslideout ease-out 1s forwards;
 }
 @keyframes igorslideout {
     from {
-      transform: translateX(20vw) translateY(-200vh) scale(0.5);
+     transform: translateY(130vh) scale(0.5);
     opacity: 0;
     }
  to {
- transform: translateX(20vw) translateY(30vh);
      opacity: 1;
      }
 }
-
 /*eyedrop animation*/
 .eyedrop {
- animation: movetobottom ease-out 1s forwards;
+ animation: movetobottom ease-out 2.5s forwards;
 }
 @keyframes movetobottom {
- to {
- transform: translateY(0vh);
+    5%{
+ transform: translateX(7vw);
+ }
+ 50% {
+ transform: translateX(7vw) translateY(50vh);
+ }
+to{
+ transform: translateX(50vw) translateY(50vh) rotate(360deg);
  }
 }
 
-/*eyeball roll animation*/
+/*eyeball roll animation
 .eyeballroll {
  animation: roll ease-out 1s forwards;
 }
 @keyframes roll {
- from { transform: translateY(0vh);
+ from { transform: translateX(7vw) translateY(30vh);
     }
      to {
  transform: translateY(0vh) rotate(660deg);
  }
-}
+}*/
 
 .hide {
     display: none;
 }
+
+#title-text{
+    animation: fade 5s forwards;
+}
+
+@keyframes fade{
+    80%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.arrow{
+    cursor:pointer;
+}
+
+.linktolab1{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    cursor: pointer;
+    }
