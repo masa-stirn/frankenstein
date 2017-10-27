@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Frankenstein Dance</title>
+
+    <style>
+        body {
+            background-image: url(images/young-frankenstein-dance.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            opacity: 0;
+            animation: show 0.2s forwards;
+        }
+        @keyframes show {
+            to{
+                opacity: 1;
+            }
+        }
+
+
+        .circle:before {
+    content:" ";
+    position:absolute;
+    width: 1000px;
+    height: 1000px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    border-radius:50%;
+    box-shadow:0 0px 0 850px #000;
+    opacity: 0;
+    animation: growcircle 1.5s linear;
+    z-index: 1000;
+}
+        @keyframes growcircle {
+            50%{
+                opacity: 0.8;
+            }
+            100%{
+                opacity: 1;
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .circle2:before {
+    content:" ";
+    position:absolute;
+    width: 1000px;
+    height: 1000px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    border-radius:50%;
+    box-shadow:0 0px 0 850px #000;
+    opacity: 0;
+    animation: growcircle2 1.5s linear reverse;
+    z-index: 1000;
+}
+        @keyframes growcircle2 {
+            50%{
+                opacity: 0.8;
+            }
+            100%{
+                opacity: 1;
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="mylens"></div>
+
+
+    <audio class="bgmusic">
+            <source src="audio/bgmusic.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="woop">
+            <source src="audio/woop.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+     <audio class="wow">
+            <source src="audio/wow.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="laughter">
+            <source src="audio/laughter.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="safety">
+            <source src="audio/safety.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+
+
+
+    <script>
+        let myLens = document.querySelector(".mylens");
+        let creature = document.querySelector(".creature");
+
+        function pageLoad(){
+            myLens.classList.add("circle2")
+        }
+
+
+
+        myLens.addEventListener("animationend", spriteFart)
+
+        function spriteFart(){
+            creature.classList.add(".creature-sprite")
+            setTimeout(function(){
+            let bgmusic = document.querySelector(".bgmusic")
+            bgmusic.play();
+            }, 3500);
+            setTimeout(function(){
+            let woop = document.querySelector(".woop")
+            woop.play();
+            }, 3800);
+            setTimeout(function(){
+            let wow = document.querySelector(".wow")
+            wow.play();
+            }, 3900);
+            setTimeout(function(){
+            let laughter = document.querySelector(".laughter")
+            laughter.play();
+            //code for the throwing paper
+            }, 4100);
+            setTimeout(function(){
+            let safety = document.querySelector(".safety")
+            safety.play();
+            //code for the throwing paper
+            }, 4200);
+        }
+
+
+             /*
+        safety.addEventListener('ended', lens);
+
+        function lens() {
+        myLens.classList.add("circle")
+            setTimeout(function(){
+                window.location.href = "lab2.html";
+            }, 1500);
+        }*/
+
+        pageLoad();
+
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+
+.mylens:before {
+    content:" ";
+    position:absolute;
+    width: 1000px;
+    height: 1000px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    border-radius:50%;
+    box-shadow:0 0px 0 850px #000;
+    opacity: 0;
+    animation: growcircle 2s linear;
+}
+
+
+        @keyframes growcircle {
+            100%{
+                opacity: 1;
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .something{
+            width: 100vw;
+            height: 100vh;
+            background: lightblue;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="mylens"></div>
+    <div class="something"></div>
+
+
+    <script>
+
+    let body = document.querySelector("body");
+    let myLens = document.querySelector(".mylens");
+
+    body.addEventListener('click', lens);
+
+     function lens() {
+    myLens.classList.add("circle")
+     }
+
+    </script>
+
+
+</body>
+
+
+</html>

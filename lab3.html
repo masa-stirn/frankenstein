@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+        <div class="mylens"></div>
+        <div class="brick"></div>
+        <div class="floor"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1437 1223">
+  <defs>
+    <style>
+
+        .switch1down, .switch2down{
+            display: none;
+        }
+        .switch1up, .switch2up{
+            display: none;
+        }
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #545454;
+      }
+
+      .cls-3 {
+        fill: #444243;
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-20, .cls-23, .cls-27, .cls-28, .cls-3, .cls-30, .cls-31, .cls-33, .cls-34, .cls-36, .cls-37, .cls-39, .cls-4, .cls-40, .cls-42, .cls-43, .cls-5, .cls-6, .cls-7, .cls-9 {
+        stroke: #000;
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-19, .cls-20, .cls-22, .cls-23, .cls-27, .cls-28, .cls-3, .cls-30, .cls-31, .cls-33, .cls-34, .cls-36, .cls-37, .cls-39, .cls-4, .cls-40, .cls-42, .cls-43, .cls-5, .cls-6, .cls-7, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-11, .cls-19, .cls-22, .cls-23, .cls-27, .cls-28, .cls-3, .cls-30, .cls-31, .cls-33, .cls-34, .cls-36, .cls-37, .cls-39, .cls-40, .cls-42, .cls-43, .cls-9 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-4 {
+        fill: #bcbbbb;
+      }
+
+      .cls-22, .cls-5, .cls-6, .cls-9 {
+        fill: none;
+      }
+
+      .cls-12, .cls-20, .cls-6 {
+        stroke-width: 0.25px;
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-7 {
+        fill: #9e9e9e;
+      }
+
+      .cls-8 {
+        fill: #605f60;
+      }
+
+      .cls-10 {
+        stroke-width: 0.75px;
+      }
+
+      .cls-13, .cls-18 {
+        fill: #333;
+      }
+
+      .cls-14 {
+        fill: #ddd;
+      }
+
+      .cls-15 {
+        fill: gray;
+      }
+
+      .cls-16, .cls-20 {
+        fill: #1a1a1a;
+      }
+
+      .cls-17 {
+        fill: #666;
+      }
+
+      .cls-19, .cls-21 {
+        fill: #f2f2f2;
+      }
+
+      .cls-19, .cls-22 {
+        stroke: #231f20;
+      }
+
+      .cls-19, .cls-20, .cls-22 {
+        stroke-linecap: round;
+      }
+
+      .cls-23 {
+        fill: #7e7e7e;
+      }
+
+      .cls-24 {
+        opacity: 0.5;
+      }
+
+      .cls-24, .cls-25 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-25 {
+        opacity: 0.75;
+      }
+
+      .cls-26 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-27 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-28 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-29 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-30 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-31 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-32 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-33 {
+        fill: url(#linear-gradient-8);
+      }
+
+      .cls-34 {
+        fill: url(#linear-gradient-9);
+      }
+
+      .cls-35 {
+        fill: url(#linear-gradient-10);
+      }
+
+      .cls-36 {
+        fill: url(#linear-gradient-11);
+      }
+
+      .cls-37 {
+        fill: url(#linear-gradient-12);
+      }
+
+      .cls-38 {
+        fill: url(#linear-gradient-13);
+      }
+
+      .cls-39 {
+        fill: url(#linear-gradient-14);
+      }
+
+      .cls-40 {
+        fill: url(#linear-gradient-15);
+      }
+
+      .cls-41 {
+        fill: url(#linear-gradient-16);
+      }
+
+      .cls-42 {
+        fill: url(#linear-gradient-17);
+      }
+
+      .cls-43 {
+        fill: url(#linear-gradient-18);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="768.25" y1="1053.28" x2="898.52" y2="1128.49" gradientTransform="translate(1815 1701) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#666"/>
+      <stop offset="0.4" stop-color="#636363"/>
+      <stop offset="0.69" stop-color="#5a5a5a"/>
+      <stop offset="0.93" stop-color="#4b4b4b"/>
+      <stop offset="1" stop-color="#454545"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="827.1" y1="677.65" x2="843.37" y2="677.65" gradientTransform="matrix(-1, 0, 0, 1, 1497.93, -90.31)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.09" stop-color="#020202"/>
+      <stop offset="0.47"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="825.87" y1="645.65" x2="839.9" y2="645.65" gradientTransform="matrix(1, 0, 0, -1, 148.9, 1291.3)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="767.25" y1="761.86" x2="897.52" y2="837.07" gradientTransform="matrix(-1, 0, 0, 0.97, 1814.67, -37)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="826.1" y1="677.22" x2="842.37" y2="677.22" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-6" x1="824.87" y1="645.22" x2="838.9" y2="645.22" gradientTransform="matrix(1, 0, 0, -1, 150.9, 1290.44)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-7" x1="418.25" y1="1053.28" x2="548.52" y2="1128.49" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="477.1" y1="677.65" x2="493.37" y2="677.65" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-9" x1="475.87" y1="645.65" x2="489.9" y2="645.65" gradientTransform="matrix(1, 0, 0, -1, 848.9, 1291.3)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-10" x1="417.25" y1="762.89" x2="547.52" y2="838.1" gradientTransform="matrix(-1, 0, 0, 0.97, 1814.67, -37)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-11" x1="476.1" y1="678.22" x2="492.37" y2="678.22" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-12" x1="474.87" y1="646.22" x2="488.9" y2="646.22" gradientTransform="matrix(1, 0, 0, -1, 850.9, 1292.44)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-13" x1="87.25" y1="1051.28" x2="217.52" y2="1126.49" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-14" x1="146.1" y1="679.65" x2="162.37" y2="679.65" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-15" x1="144.87" y1="647.65" x2="158.9" y2="647.65" gradientTransform="matrix(1, 0, 0, -1, 1510.9, 1295.3)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-16" x1="85.25" y1="764.95" x2="215.52" y2="840.16" gradientTransform="matrix(-1, 0, 0, 0.97, 1814.67, -37)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-17" x1="144.1" y1="680.22" x2="160.37" y2="680.22" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-18" x1="142.87" y1="648.22" x2="156.9" y2="648.22" gradientTransform="matrix(1, 0, 0, -1, 1514.9, 1296.44)" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <title>scene2</title>
+  <g class="cls-1">
+    <g id="prof1" class="professor1">
+      <g id="shoes">
+        <path class="cls-2" d="M437,1268s-38,18-41,30,4,12,4,12h30s42-12,41-18l2-32Z" transform="translate(-317 -90)"/>
+        <path class="cls-2" d="M550,1271s38,18,41,30-4,12-4,12H556s-42-12-41-18l-2-32Z" transform="translate(-317 -90)"/>
+      </g>
+      <g id="Legs">
+        <path class="cls-3" d="M420,1004l6,267s31,17,53,4l3-270Z" transform="translate(-317 -90)"/>
+        <path class="cls-3" d="M500,1006l6,267s31,17,53,4l3-270Z" transform="translate(-317 -90)"/>
+      </g>
+      <g id="Upper_body" data-name="Upper body">
+        <path class="cls-4" d="M587,887c1,12,2,35,2,40s8,0,8,0,6-15,10-16h2c3,6,15,0,21-1s4-4,10-17-1-38-4-50v-6l4-3V808s-29,14-45,1v21s4,4,4,7-6,12-9,17Z" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M634,837" transform="translate(-317 -90)"/>
+        <line class="cls-5" x1="318" y1="747" x2="280" y2="747"/>
+        <path class="cls-4" d="M383,857c-3-5-9-15-9-17s4-7,4-7V812c-15,13-45-1-45-1v27l4,3v6c-3,13-8,40-4,50s4,15,10,17,18,7,21,1h2c4,1,10,16,10,16s8,7,8,0,2-28,2-40Z" transform="translate(-317 -90)"/>
+        <path class="cls-4" d="M587,812h8c1,1,7,1,7,3s13,2,22,2,14-2,21-1h4l2-2,5-4a11,11,0,0,0,2-9c-3-11-7-346-87-336,0,0,8-19-26-30s-102,0-102,0-34,11-27,31c0,0-8-7-27,13s-34,58-34,58-4-1-17,52-17,211-17,211,0,7,11,11c0,0,29,14,45,1h6v47l2,4v29l2,156s77,44,198,0l3-157c0-5-1-11,0-16S587,812,587,812Z" transform="translate(-317 -90)"/>
+        <path class="cls-4" d="M385,861v-4Z" transform="translate(-317 -90)"/>
+        <g id="Upper_details" data-name="Upper details">
+          <polyline class="cls-5" points="64 486 65 712 60 722"/>
+        </g>
+        <path class="cls-5" d="M344,906l2,9Z" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M361,906l2,8Z" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M590,811l-2-233Z" transform="translate(-317 -90)"/>
+        <path class="cls-6" d="M383,560" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M336,840" transform="translate(-317 -90)"/>
+        <line class="cls-5" x1="19" y1="750" x2="57" y2="750"/>
+        <path class="cls-5" d="M626,903l-2,9Z" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M609,903l-2,8Z" transform="translate(-317 -90)"/>
+      </g>
+      <g id="Necklace">
+        <g id="Necklace-2" data-name="Necklace">
+          <path class="cls-7" d="M451,487h13s-4,18,8,20,23,1,27-5,5-16,5-16l11,4s-3,26-12,26-37,12-47-6c0,0-12-5-5-25s13,1,13,1H451" transform="translate(-317 -90)"/>
+          <g>
+            <path class="cls-8" d="M434,430s-13,1-11,11,19,21,19,21,13,29,6,35-20,69-20,69v83s18,51,35,74c0,0-27,17-17,37,0,0,6,21,24,22s32-4,37-14,10-8,0-29-17-17-17-17l35-70s3-76,1-97-11-59-11-59-4-17,14-32,22-17,22-17,8-6,3-11-17-8-17-8v15s-37,29-37,38,25,153,6,174l-28,66H471s-27-51-25-60-10-35-7-63,24-105,24-105-3-22-8-32l-17-17Z" transform="translate(-317 -90)"/>
+            <path class="cls-9" d="M434,430s-13,1-11,11,19,21,19,21,13,29,6,35-20,69-20,69v83s18,51,35,74c0,0-27,17-17,37,0,0,6,21,24,22s32-4,37-14,10-8,0-29-17-17-17-17l35-70s3-76,1-97-11-59-11-59-4-17,14-32,22-17,22-17,8-6,3-11-17-8-17-8v15s-37,29-37,38,25,153,6,174l-28,66H471s-27-51-25-60-10-35-7-63,24-105,24-105-3-22-8-32l-17-17Z" transform="translate(-317 -90)"/>
+          </g>
+          <path class="cls-10" d="M457,742s9-22,27-13,19,22,19,22-2,21-20,22-25-9-25-9S451,752,457,742Z" transform="translate(-317 -90)"/>
+          <path class="cls-11" d="M465,748s5-13,16-8,11,13,11,13-1,12-12,13-14-5-14-5S462,754,465,748Z" transform="translate(-317 -90)"/>
+          <path class="cls-12" d="M469,749s4-10,12-6,9,10,9,10-1,10-9,10-11-4-11-4S467,754,469,749Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+      <g id="Hair">
+        <g id="third">
+          <ellipse class="cls-13" cx="151" cy="169" rx="113" ry="136"/>
+        </g>
+        <g id="Head">
+          <path class="cls-14" d="M414,204s4,128-3,131,21,41,22,49,7,53,3,58,18,18,18,18h67s13-17,20-18,3-49,6-56,14-26,18-31,2-10,3-22,0-138,0-138,10-39-25-52-108-3-108-3Z" transform="translate(-317 -90)"/>
+        </g>
+        <path id="light1" class="cls-15" d="M429,376s-4-10-6-10H411s-8-6-6-8-13-3-13-3-25-10-14-14-7-10-7-10-11-8-1-14-7,0-7,0-46-10-28-24c0,0-32-25-13-39s-4-17,33-32c0,0-5-22,6-24s14-20,14-20-10-22,7-22c0,0,4-34,32-41,0,0,17-6,20,0s26-38,45-17,26,8,31,0,18-4,14,14,28,8,28,8,33,3,10,29c0,0,33,0,24,28s36,0,38,17,47,22,14,42,3,8,3,8,47,18,3,46c0,0,0,34-17,22,0,0-8,1-10,15s-13,10-13,10-21,8-13,14-6,13-8,11-13,7-13,7l-15,7,8-18,2-6c2-6,3-11,3-15s20-51,20-51-6-31-2-44-31-35-37-44-8-26,0-37-22-3-22-3-32-11-36-20-12,24-21,22-20,6-27-4-21-8-21-8-7,25-22,29-7,27-7,27,17,11,13,20-24,20-24,20-32,32-21,41,27,10,27,10-7,22-1,21,8,8,8,8-3,27,13,21Z" transform="translate(-317 -90)"/>
+        <g id="dark2">
+          <path class="cls-16" d="M482,142s-2,19-28,16-24,27-24,27-4,27-12,24-3,46-3,46l-3,92s-1,27,9,34l-30-24s-18-33-2-31-24-32-24-32-17-16,5-25l-17,7c22-9,41-28,41-28s18-27,3-31-10-28-3-28,28-19,24-24-3-22,12-15,46-18,46-18,12-10,13-2S482,142,482,142Z" transform="translate(-317 -90)"/>
+        </g>
+        <path id="dark1" class="cls-16" d="M560,362s22-6,18-24a63,63,0,0,1,1-33,116,116,0,0,0,16-32c7-22-8-20-10-31s-6-15-14-24l-27-25s28,44,27,63S560,362,560,362Z" transform="translate(-317 -90)"/>
+      </g>
+      <g id="Face">
+        <g id="Nose">
+          <path class="cls-5" d="M472,296s7,0,10,5,11-1,11-1,4-6,7-4,11-14-1-18V247" transform="translate(-317 -90)"/>
+        </g>
+        <g id="mouth">
+          <path class="cls-17" d="M515,324c0,7-17,17-29,17s-30-11-30-18,19-1,31-1S515,317,515,324Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="eyebrows">
+          <path class="cls-18" d="M421,216c1-7,20-18,32-16s24,12,23,19-13-5-25-7S420,222,421,216Z" transform="translate(-317 -90)"/>
+          <path class="cls-18" d="M551,216c-1-7-20-18-32-16s-24,12-23,19,13-5,25-7S552,222,551,216Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="moustache">
+          <path class="cls-18" d="M482,305s1,13,0,16-17,10-29,4-1-9-1-9h20l3-11S482,300,482,305Z" transform="translate(-317 -90)"/>
+          <path class="cls-18" d="M490,305s-1,13,0,16,17,10,29,4,1-9,1-9H501l-3-11S490,300,490,305Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="eye">
+          <path class="cls-19" d="M430,246s2-20,15-21,18,10,18,10,8,15-2,25-19,6-19,6S431,261,430,246Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="eyes">
+          <path class="cls-20" d="M448,239c4,0,5,3,5,5s-1,4-1,4h-4c-5-1-5-4-5-5S444,239,448,239Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="second_eye" data-name="second eye">
+          <g>
+            <path class="cls-21" d="M508,246s2-21,15-22,18,11,18,11,8,15-2,25-19,6-19,6S509,261,508,246Z" transform="translate(-317 -90)"/>
+            <path class="cls-22" d="M508,246s2-21,15-22,18,11,18,11,8,15-2,25-19,6-19,6S509,261,508,246Z" transform="translate(-317 -90)"/>
+          </g>
+          <path class="cls-20" d="M527,239c4,0,5,3,5,5a5,5,0,0,1-1,5h-5c-5-1-5-4-5-5S523,239,527,239Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+    </g>
+    <g id="prof2" class="professor2 hide">
+      <g id="shoes-2" data-name="shoes">
+        <path class="cls-2" d="M437,1268s-38,18-41,30,4,12,4,12h30s42-12,41-18l2-32Z" transform="translate(-317 -90)"/>
+        <path class="cls-2" d="M550,1271s38,18,41,30-4,12-4,12H556s-42-12-41-18l-2-32Z" transform="translate(-317 -90)"/>
+      </g>
+      <g id="Legs-2" data-name="Legs">
+        <path class="cls-3" d="M420,1004l6,267s31,17,53,4l3-270Z" transform="translate(-317 -90)"/>
+        <path class="cls-3" d="M500,1006l6,267s31,17,53,4l3-270Z" transform="translate(-317 -90)"/>
+      </g>
+      <g id="Upper_body-2" data-name="Upper body">
+        <path class="cls-4" d="M587,887c1,12,2,35,2,40s8,0,8,0,6-15,10-16h2c3,6,15,0,21-1s4-4,10-17-1-38-4-50v-6l4-3V808s-29,14-45,1v21s4,4,4,7-6,12-9,17Z" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M634,837" transform="translate(-317 -90)"/>
+        <line class="cls-5" x1="318" y1="747" x2="280" y2="747"/>
+        <path class="cls-4" d="M383,857c-3-5-9-15-9-17s4-7,4-7V812c-15,13-45-1-45-1v27l4,3v6c-3,13-8,40-4,50s4,15,10,17,18,7,21,1h2c4,1,10,16,10,16s8,7,8,0,2-28,2-40Z" transform="translate(-317 -90)"/>
+        <path class="cls-4" d="M587,812h8c1,1,7,1,7,3s13,2,22,2,14-2,21-1h4l2-2,5-4a11,11,0,0,0,2-9c-3-11-7-346-87-336,0,0,8-19-26-30s-102,0-102,0-34,11-27,31c0,0-8-7-27,13s-34,58-34,58-4-1-17,52-17,211-17,211,0,7,11,11c0,0,29,14,45,1h6v47l2,4v29l2,156s77,44,198,0l3-157c0-5-1-11,0-16S587,812,587,812Z" transform="translate(-317 -90)"/>
+        <path class="cls-4" d="M385,861v-4Z" transform="translate(-317 -90)"/>
+        <g id="Upper_details-2" data-name="Upper details">
+          <polyline class="cls-5" points="64 486 65 712 60 722"/>
+        </g>
+        <path class="cls-5" d="M344,906l2,9Z" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M361,906l2,8Z" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M590,811l-2-233Z" transform="translate(-317 -90)"/>
+        <path class="cls-6" d="M383,560" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M336,840" transform="translate(-317 -90)"/>
+        <line class="cls-5" x1="19" y1="750" x2="57" y2="750"/>
+        <path class="cls-5" d="M626,903l-2,9Z" transform="translate(-317 -90)"/>
+        <path class="cls-5" d="M609,903l-2,8Z" transform="translate(-317 -90)"/>
+      </g>
+      <g id="Necklace-3" data-name="Necklace">
+        <g id="Necklace-4" data-name="Necklace">
+          <path class="cls-7" d="M451,487h13s-4,18,8,20,23,1,27-5,5-16,5-16l11,4s-3,26-12,26-37,12-47-6c0,0-12-5-5-25s13,1,13,1H451" transform="translate(-317 -90)"/>
+          <g>
+            <path class="cls-8" d="M434,430s-13,1-11,11,19,21,19,21,13,29,6,35-20,69-20,69v83s18,51,35,74c0,0-27,17-17,37,0,0,6,21,24,22s32-4,37-14,10-8,0-29-17-17-17-17l35-70s3-76,1-97-11-59-11-59-4-17,14-32,22-17,22-17,8-6,3-11-17-8-17-8v15s-37,29-37,38,25,153,6,174l-28,66H471s-27-51-25-60-10-35-7-63,24-105,24-105-3-22-8-32l-17-17Z" transform="translate(-317 -90)"/>
+            <path class="cls-9" d="M434,430s-13,1-11,11,19,21,19,21,13,29,6,35-20,69-20,69v83s18,51,35,74c0,0-27,17-17,37,0,0,6,21,24,22s32-4,37-14,10-8,0-29-17-17-17-17l35-70s3-76,1-97-11-59-11-59-4-17,14-32,22-17,22-17,8-6,3-11-17-8-17-8v15s-37,29-37,38,25,153,6,174l-28,66H471s-27-51-25-60-10-35-7-63,24-105,24-105-3-22-8-32l-17-17Z" transform="translate(-317 -90)"/>
+          </g>
+          <path class="cls-10" d="M457,742s9-22,27-13,19,22,19,22-2,21-20,22-25-9-25-9S451,752,457,742Z" transform="translate(-317 -90)"/>
+          <path class="cls-11" d="M465,748s5-13,16-8,11,13,11,13-1,12-12,13-14-5-14-5S462,754,465,748Z" transform="translate(-317 -90)"/>
+          <path class="cls-12" d="M469,749s4-10,12-6,9,10,9,10-1,10-9,10-11-4-11-4S467,754,469,749Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+      <g id="Hair-2" data-name="Hair">
+        <g id="third-2" data-name="third">
+          <ellipse class="cls-13" cx="151" cy="169" rx="113" ry="136"/>
+        </g>
+        <g id="Head-2" data-name="Head">
+          <path class="cls-14" d="M414,204s4,128-3,131,21,41,22,49,7,53,3,58,18,18,18,18h67s13-17,20-18,3-49,6-56,14-26,18-31,2-10,3-22,0-138,0-138,10-39-25-52-108-3-108-3Z" transform="translate(-317 -90)"/>
+        </g>
+        <path id="light1-2" data-name="light1" class="cls-15" d="M429,376s-4-10-6-10H411s-8-6-6-8-13-3-13-3-25-10-14-14-7-10-7-10-11-8-1-14-7,0-7,0-46-10-28-24c0,0-32-25-13-39s-4-17,33-32c0,0-5-22,6-24s14-20,14-20-10-22,7-22c0,0,4-34,32-41,0,0,17-6,20,0s26-38,45-17,26,8,31,0,18-4,14,14,28,8,28,8,33,3,10,29c0,0,33,0,24,28s36,0,38,17,47,22,14,42,3,8,3,8,47,18,3,46c0,0,0,34-17,22,0,0-8,1-10,15s-13,10-13,10-21,8-13,14-6,13-8,11-13,7-13,7l-15,7,8-18,2-6c2-6,3-11,3-15s20-51,20-51-6-31-2-44-31-35-37-44-8-26,0-37-22-3-22-3-32-11-36-20-12,24-21,22-20,6-27-4-21-8-21-8-7,25-22,29-7,27-7,27,17,11,13,20-24,20-24,20-32,32-21,41,27,10,27,10-7,22-1,21,8,8,8,8-3,27,13,21Z" transform="translate(-317 -90)"/>
+        <g id="dark2-2" data-name="dark2">
+          <path class="cls-16" d="M482,142s-2,19-28,16-24,27-24,27-4,27-12,24-3,46-3,46l-3,92s-1,27,9,34l-30-24s-18-33-2-31-24-32-24-32-17-16,5-25l-17,7c22-9,41-28,41-28s18-27,3-31-10-28-3-28,28-19,24-24-3-22,12-15,46-18,46-18,12-10,13-2S482,142,482,142Z" transform="translate(-317 -90)"/>
+        </g>
+        <path id="dark1-2" data-name="dark1" class="cls-16" d="M560,362s22-6,18-24a63,63,0,0,1,1-33,116,116,0,0,0,16-32c7-22-8-20-10-31s-6-15-14-24l-27-25s28,44,27,63S560,362,560,362Z" transform="translate(-317 -90)"/>
+      </g>
+      <g id="Face-2" data-name="Face">
+        <g id="Nose-2" data-name="Nose">
+          <path class="cls-5" d="M472,296s7,0,10,5,11-1,11-1,4-6,7-4,11-14-1-18V247" transform="translate(-317 -90)"/>
+        </g>
+        <g id="mouth-2" data-name="mouth">
+          <path class="cls-17" d="M515,327c0,11-17,27-29,27s-30-18-30-29,19-2,31-2S515,315,515,327Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="eyebrows-2" data-name="eyebrows">
+          <path class="cls-18" d="M420,209c2-7,21-16,33-13s23,14,21,21-13-6-25-9S419,216,420,209Z" transform="translate(-317 -90)"/>
+          <path class="cls-18" d="M551,220c0-7-18-19-30-19s-25,10-25,17,14-4,26-5S551,227,551,220Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="moustache-2" data-name="moustache">
+          <path class="cls-18" d="M483,301s0,13-1,16-18,8-30,1-1-9-1-9h20l4-11S484,296,483,301Z" transform="translate(-317 -90)"/>
+          <path class="cls-18" d="M491,301s-2,13-1,16,16,11,29,6,2-8,2-8l-20-3-2-11S491,297,491,301Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="eye-2" data-name="eye">
+          <path class="cls-19" d="M426,247s2-23,17-24,20,12,20,12,9,17-2,28-21,6-21,6S427,264,426,247Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="eyes-2" data-name="eyes">
+          <path class="cls-20" d="M448,239c4,0,5,3,5,5s-1,4-1,4h-4c-5-1-5-4-5-5S444,239,448,239Z" transform="translate(-317 -90)"/>
+        </g>
+        <g id="second_eye-2" data-name="second eye">
+          <g>
+             <path class="cls-21" d="M513,252s2-23,17-24,21,12,21,12,9,17-2,28-22,6-22,6S515,270,513,252Z" transform="translate(-317 -90)"/>
+            <path class="cls-22" d="M513,252s2-23,17-24,21,12,21,12,9,17-2,28-22,6-22,6S515,270,513,252Z" transform="translate(-317 -90)"/>
+          </g>
+           <path class="cls-20" d="M535,244c4,0,6,3,6,6a6,6,0,0,1-1,5h-5c-6-1-6-4-6-6S531,244,535,244Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+      <ellipse class="cls-18" cx="169" cy="253" rx="13" ry="6"/>
+    </g>
+    <g id="switch1-up" class="switch1up switch">
+      <g>
+
+        <rect class="cls-23" x="586" y="455" width="162" height="241.51"/>
+        <g>
+          <use class="cls-24" transform="translate(645 459)" xlink:href="#image"/>
+          <polygon points="719 518 718 497 711 497 709 496 706 496 702 496 695 499 695 520 702 518 706 513 707 519 708 522 719 518"/>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(561 457)" xlink:href="#image-2"/>
+          <polygon points="635 515 634 495 627 494 625 494 622 494 618 494 611 497 611 517 618 515 621 510 623 517 624 520 635 515"/>
+        </g>
+        <g>
+          <g>
+            <path class="cls-26" d="M932,657c-11,22,3,28,3,28h5c13-9,1-23,1-23V627h32v16h9V625h36v32c-6,6,0,27,0,27h7a73,73,0,0,0-4-14c-3-7,4-20,4-20V549l-37,3,2-34c-16-25-23,2-23,2l3,34-42-2Zm78-87,2,38-65,4-2-39Z" transform="translate(-317 -90)" />
+            <path class="cls-6" d="M932,657c-11,22,3,28,3,28h5c13-9,1-23,1-23V627h32v16h9V625h36v32c-6,6,0,27,0,27h7a73,73,0,0,0-4-14c-3-7,4-20,4-20V549l-37,3,2-34c-16-25-23,2-23,2l3,34-42-2Zm78-87,2,38-65,4-2-39Z" transform="translate(-317 -90)"/>
+          </g>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(654 535)" xlink:href="#image-3"/>
+          <path d="M1035,668v23a6,6,0,0,1-4,5h-1a6,6,0,0,1-6-3c-3-4-5-13,1-28a6,6,0,0,1,6-3h0A6,6,0,0,1,1035,668Z" transform="translate(-317 -90)"/>
+        </g>
+        <polygon class="cls-27" points="671 615 655 614 660 560 669 560 671 615"/>
+        <rect class="cls-28" x="975" y="639" width="14" height="14.03" rx="7" ry="7" transform="translate(1647 1201) rotate(-180)"/>
+        <g>
+          <use class="cls-24" transform="translate(557 532)" xlink:href="#image-4"/>
+          <path d="M940,664v21a5,5,0,0,1-4,5h-1a6,6,0,0,1-7-2c-3-4-6-12,1-26a6,6,0,0,1,7-3h0C938,660,940,662,940,664Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+    </g>
+    <g id="switch1-down" class="switch1down hide switch">
+      <g>
+
+        <rect class="cls-23" x="585" y="454" width="162" height="241.51"/>
+        <g>
+          <use class="cls-24" transform="translate(646 458)" xlink:href="#image-5"/>
+          <polygon points="720 517 719 496 712 496 710 496 707 496 703 496 696 498 696 519 703 517 707 512 708 518 709 521 720 517"/>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(562 456)" xlink:href="#image-6"/>
+          <polygon points="636 515 635 494 628 494 626 494 623 494 619 493 612 496 612 517 619 515 622 510 624 516 625 519 636 515"/>
+        </g>
+        <g>
+          <g>
+
+            <path class="cls-29" d="M933,694c-11-22,3-27,3-27h5c13,9,1,22,1,22v33h32V708h9v17h36V695c-6-6,0-26,0-26h7a69,69,0,0,1-4,13c-3,7,4,19,4,19v98l-37-3,2,33c-16,24-23-2-23-2l3-33-42,2Zm78,84,2-37-65-4-2,38Z" transform="translate(-317 -90)"/>
+            <path class="cls-6" d="M933,694c-11-22,3-27,3-27h5c13,9,1,22,1,22v33h32V708h9v17h36V695c-6-6,0-26,0-26h7a69,69,0,0,1-4,13c-3,7,4,19,4,19v98l-37-3,2,33c-16,24-23-2-23-2l3-33-42,2Zm78,84,2-37-65-4-2,38Z" transform="translate(-317 -90)"/>
+          </g>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(655 534)" xlink:href="#image-7"/>
+          <path d="M1036,667v23a6,6,0,0,1-4,5h-1a6,6,0,0,1-6-3c-3-4-5-13,1-28a6,6,0,0,1,6-3h0A6,6,0,0,1,1036,667Z" transform="translate(-317 -90)"/>
+        </g>
+        <polygon class="cls-30" points="672 615 656 614 661 559 670 559 672 615"/>
+        <rect class="cls-31" x="976" y="638" width="14" height="14.03" rx="7" ry="7" transform="translate(1649 1200) rotate(-180)"/>
+        <g>
+          <use class="cls-24" transform="translate(558 531)" xlink:href="#image-8"/>
+          <path d="M941,664v21a5,5,0,0,1-4,5h-1a6,6,0,0,1-7-2c-3-4-6-12,1-26a6,6,0,0,1,7-3h0C939,659,941,662,941,664Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+    </g>
+    <g id="switch2-up" class="switch2up switch">
+      <g>
+
+        <rect class="cls-23" x="936" y="455" width="162" height="241.51"/>
+        <g>
+          <use class="cls-24" transform="translate(1312 549)" xlink:href="#image"/>
+          <polygon points="1069 518 1068 497 1061 497 1059 496 1056 496 1052 496 1045 499 1045 520 1052 518 1056 513 1057 519 1058 522 1069 518"/>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(1228 547)" xlink:href="#image-2"/>
+          <polygon points="985 515 984 495 977 494 975 494 972 494 968 494 961 497 961 517 968 515 971 510 973 517 974 520 985 515"/>
+        </g>
+        <g>
+          <use class="cls-25" transform="translate(937 394)" xlink:href="#image-9"/>
+          <g>
+            <path class="cls-32" d="M1282,657c-11,22,3,28,3,28h5c13-9,1-23,1-23V627h32v16h9V625h36v32c-6,6,0,27,0,27h7a73,73,0,0,0-4-14c-3-7,4-20,4-20V549l-37,3,2-34c-16-25-23,2-23,2l3,34-42-2Zm78-87,2,38-65,4-2-39Z" transform="translate(-317 -90)"/>
+            <path class="cls-6" d="M1282,657c-11,22,3,28,3,28h5c13-9,1-23,1-23V627h32v16h9V625h36v32c-6,6,0,27,0,27h7a73,73,0,0,0-4-14c-3-7,4-20,4-20V549l-37,3,2-34c-16-25-23,2-23,2l3,34-42-2Zm78-87,2,38-65,4-2-39Z" transform="translate(-317 -90)"/>
+          </g>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(1321 625)" xlink:href="#image-3"/>
+          <path d="M1385,668v23a6,6,0,0,1-4,5h-1a6,6,0,0,1-6-3c-3-4-5-13,1-28a6,6,0,0,1,6-3h0A6,6,0,0,1,1385,668Z" transform="translate(-317 -90)"/>
+        </g>
+        <polygon class="cls-33" points="1021 615 1005 614 1010 560 1019 560 1021 615"/>
+        <rect class="cls-34" x="1325" y="639" width="14" height="14.03" rx="7" ry="7" transform="translate(2347 1201) rotate(180)"/>
+        <g>
+          <use class="cls-24" transform="translate(1224 622)" xlink:href="#image-4"/>
+          <path d="M1290,664v21a5,5,0,0,1-4,5h-1a6,6,0,0,1-7-2c-3-4-6-12,1-26a6,6,0,0,1,7-3h0C1288,660,1290,662,1290,664Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+    </g>
+    <g id="switch2-down" class="switch2down hide switch">
+      <g>
+        <rect class="cls-23" x="935" y="455" width="162" height="241.51"/>
+        <g>
+          <use class="cls-24" transform="translate(1313 549)" xlink:href="#image-5"/>
+          <polygon points="1070 518 1069 497 1062 497 1060 497 1057 497 1053 497 1046 499 1046 520 1053 518 1057 513 1058 519 1059 522 1070 518"/>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(1229 547)" xlink:href="#image-6"/>
+          <polygon points="986 516 985 495 978 495 976 495 973 495 969 494 962 497 962 518 969 516 972 511 974 517 975 520 986 516"/>
+        </g>
+        <g>
+          <use class="cls-25" transform="translate(938 554)" xlink:href="#image-10"/>
+          <g>
+            <path class="cls-35" d="M1283,695c-11-22,3-27,3-27h5c13,9,1,22,1,22v33h32V709h9v17h36V696c-6-6,0-26,0-26h7a69,69,0,0,1-4,13c-3,7,4,19,4,19v98l-37-3,2,33c-16,24-23-2-23-2l3-33-42,2Zm78,84,2-37-65-4-2,38Z" transform="translate(-317 -90)"/>
+            <path class="cls-6" d="M1283,695c-11-22,3-27,3-27h5c13,9,1,22,1,22v33h32V709h9v17h36V696c-6-6,0-26,0-26h7a69,69,0,0,1-4,13c-3,7,4,19,4,19v98l-37-3,2,33c-16,24-23-2-23-2l3-33-42,2Zm78,84,2-37-65-4-2,38Z" transform="translate(-317 -90)"/>
+          </g>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(1322 625)" xlink:href="#image-7"/>
+          <path d="M1386,668v23a6,6,0,0,1-4,5h-1a6,6,0,0,1-6-3c-3-4-5-13,1-28a6,6,0,0,1,6-3h0A6,6,0,0,1,1386,668Z" transform="translate(-317 -90)"/>
+        </g>
+        <polygon class="cls-36" points="1022 616 1006 615 1011 560 1020 560 1022 616"/>
+        <rect class="cls-37" x="1326" y="639" width="14" height="14.03" rx="7" ry="7" transform="translate(2349 1202) rotate(-180)"/>
+        <g>
+          <use class="cls-24" transform="translate(1225 622)" xlink:href="#image-8"/>
+          <path d="M1291,665v21a5,5,0,0,1-4,5h-1a6,6,0,0,1-7-2c-3-4-6-12,1-26a6,6,0,0,1,7-3h0C1289,660,1291,663,1291,665Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+    </g>
+    <g id="switch3-up" class="switch3up switch">
+      <g>
+          <!-- shadow glow rectangualr-->
+          <defs>
+    <filter id="f1" x="0" y="0" width="120%" height="120%">
+      <feOffset result="offOut" in="SourceGraphic" dx="5" dy="5"/>
+      <feColorMatrix result = "matrixOut" in = "offOut" type = "matrix" values = "0 0 0.2 0 0 0 0 0 0 0 0 0.3 0.6 0 0.5 0 0 0 1 0"/>
+      <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+        <rect id="rect3glow" class="cls-23" x="1267" y="457" width="162" height="241.51"/>
+        <g>
+          <use class="cls-24" transform="translate(1643 551)" xlink:href="#image"/>
+          <polygon points="1400 520 1399 499 1392 499 1390 498 1387 498 1383 498 1376 501 1376 522 1383 520 1387 515 1388 521 1389 524 1400 520"/>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(1559 549)" xlink:href="#image-2"/>
+          <polygon points="1316 517 1315 497 1308 496 1306 496 1303 496 1299 496 1292 499 1292 519 1299 517 1302 512 1304 519 1305 522 1316 517"/>
+        </g>
+        <g>
+          <use class="cls-25" transform="translate(1585 486)" xlink:href="#image-9"/>
+          <g>
+               <!-- shadow glow pull-->
+              <defs>
+    <filter id="f2" x="0" y="0" width="120%" height="120%">
+      <feOffset result="offOut" in="SourceGraphic" dx="4" dy="4"/>
+      <feColorMatrix result = "matrixOut" in = "offOut" type = "matrix" values = "0 0 0.2 0 0 0 0 0 0 0 0 0.3 0.6 0 0.5 0 0 0 1 0"/>
+      <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+            <path id="pull3glow" class="cls-38" d="M1613,659c-11,22,3,28,3,28h5c13-9,1-23,1-23V629h32v16h9V627h36v32c-6,6,0,27,0,27h7a73,73,0,0,0-4-14c-3-7,4-20,4-20V551l-37,3,2-34c-16-25-23,2-23,2l3,34-42-2Zm78-87,2,38-65,4-2-39Z" transform="translate(-317 -90)"/>
+            <path class="cls-6" d="M1613,659c-11,22,3,28,3,28h5c13-9,1-23,1-23V629h32v16h9V627h36v32c-6,6,0,27,0,27h7a73,73,0,0,0-4-14c-3-7,4-20,4-20V551l-37,3,2-34c-16-25-23,2-23,2l3,34-42-2Zm78-87,2,38-65,4-2-39Z" transform="translate(-317 -90)"/>
+          </g>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(1652 627)" xlink:href="#image-3"/>
+          <path d="M1716,670v23a6,6,0,0,1-4,5h-1a6,6,0,0,1-6-3c-3-4-5-13,1-28a6,6,0,0,1,6-3h0A6,6,0,0,1,1716,670Z" transform="translate(-317 -90)"/>
+        </g>
+        <polygon class="cls-39" points="1352 617 1336 616 1341 562 1350 562 1352 617"/>
+        <rect class="cls-40" x="1656" y="641" width="14" height="14.03" rx="7" ry="7" transform="translate(3009 1205) rotate(180)"/>
+        <g>
+          <use class="cls-24" transform="translate(1555 624)" xlink:href="#image-4"/>
+          <path d="M1621,666v21a5,5,0,0,1-4,5h-1a6,6,0,0,1-7-2c-3-4-6-12,1-26a6,6,0,0,1,7-3h0C1619,662,1621,664,1621,666Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+    </g>
+    <g id="switch3-down" class="switch3down hide switch">
+      <g>
+
+
+          <g id="electricity">
+          <g>
+            <path class="cls-41" d="M1687,473s-27,64,2,80-91,66-91,66-125-4-27,46-3,102-3,102" transform="translate(-317 -90)"/>
+            <path class="cls-41" d="M1641,512s24,65,56,57-22,110-22,110-94,82,11,52,67,77,67,77" transform="translate(-317 -90)"/>
+            <path class="cls-41" d="M1486,687s69,8,76-25,89,69,89,69,32,121,52,13,99-26,99-26" transform="translate(-317 -90)"/>
+            <path class="cls-41" d="M1514,549s69,8,76-25,89,69,89,69,32,121,52,13,99-26,99-26" transform="translate(-317 -90)"/>
+            <path class="cls-41" d="M1548,806s57-42,40-71,114-10,114-10,108,69,48-26,56-87,56-87" transform="translate(-317 -90)"/>
+          </g>
+          <g>
+            <path class="cls-42" d="M1486,658s65,25,80-4,69,89,69,89,0,125,47,26,102,0,102,0" transform="translate(-317 -90)"/>
+            <path class="cls-42" d="M1526,704s65-26,56-57,111,19,111,19,85,92,52-13,75-69,75-69" transform="translate(-317 -90)"/>
+            <path class="cls-42" d="M1706,853s6-69-27-75,66-91,66-91,120-35,11-52-29-98-29-98" transform="translate(-317 -90)"/>
+            <path class="cls-42" d="M1567,829s6-69-27-75,66-91,66-91,120-35,11-52-29-98-29-98" transform="translate(-317 -90)"/>
+            <path class="cls-42" d="M1823,788s-43-56-72-38-13-114-13-114,66-110-27-47-89-53-89-53" transform="translate(-317 -90)"/>
+          </g>
+          <g>
+            <path class="cls-43" d="M1517,759s66-22,59-54,110,24,110,24,80,96,52-10,78-65,78-65" transform="translate(-317 -90)"/>
+            <path class="cls-43" d="M1577,768s33-61,6-80,97-57,97-57,124,17,31-43,13-101,13-101" transform="translate(-317 -90)"/>
+            <path class="cls-43" d="M1811,768s-40-57-69-41-8-112-8-112,70-104-25-47-85-57-85-57" transform="translate(-317 -90)"/>
+            <path class="cls-43" d="M1689,838s-40-57-69-41-8-112-8-112,70-104-25-47-85-57-85-57" transform="translate(-317 -90)"/>
+            <path class="cls-43" d="M1858,643s-69-15-79,17-83-79-83-79-20-127-51-19-102,16-102,16" transform="translate(-317 -90)"/>
+          </g>
+        </g>
+
+
+
+
+
+
+
+
+        <rect class="cls-23" x="1267" y="457" width="162" height="241.51"/>
+        <g>
+          <use class="cls-24" transform="translate(1645 551)" xlink:href="#image-5"/>
+          <polygon points="1402 520 1401 499 1394 499 1392 499 1389 499 1385 499 1378 501 1378 522 1385 520 1389 515 1390 521 1391 524 1402 520"/>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(1561 549)" xlink:href="#image-6"/>
+          <polygon points="1318 518 1317 497 1310 497 1308 497 1305 497 1301 496 1294 499 1294 520 1301 518 1304 513 1306 519 1307 522 1318 518"/>
+        </g>
+        <g>
+          <use class="cls-25" transform="translate(1587 646)" xlink:href="#image-10"/>
+          <g>
+            <path class="cls-41" d="M1615,697c-11-22,3-27,3-27h5c13,9,1,22,1,22v33h32V711h9v17h36V698c-6-6,0-26,0-26h7a69,69,0,0,1-4,13c-3,7,4,19,4,19v98l-37-3,2,33c-16,24-23-2-23-2l3-33-42,2Zm78,84,2-37-65-4-2,38Z" transform="translate(-317 -90)"/>
+            <path class="cls-6" d="M1615,697c-11-22,3-27,3-27h5c13,9,1,22,1,22v33h32V711h9v17h36V698c-6-6,0-26,0-26h7a69,69,0,0,1-4,13c-3,7,4,19,4,19v98l-37-3,2,33c-16,24-23-2-23-2l3-33-42,2Zm78,84,2-37-65-4-2,38Z" transform="translate(-317 -90)"/>
+          </g>
+        </g>
+        <g>
+          <use class="cls-24" transform="translate(1654 627)" xlink:href="#image-7"/>
+          <path d="M1718,670v23a6,6,0,0,1-4,5h-1a6,6,0,0,1-6-3c-3-4-5-13,1-28a6,6,0,0,1,6-3h0A6,6,0,0,1,1718,670Z" transform="translate(-317 -90)"/>
+        </g>
+        <polygon class="cls-42" points="1354 618 1338 617 1343 562 1352 562 1354 618"/>
+        <rect class="cls-43" x="1658" y="641" width="14" height="14.03" rx="7" ry="7" transform="translate(3013 1206) rotate(-180)"/>
+        <g>
+          <use class="cls-24" transform="translate(1557 624)" xlink:href="#image-8"/>
+          <path d="M1623,667v21a5,5,0,0,1-4,5h-1a6,6,0,0,1-7-2c-3-4-6-12,1-26a6,6,0,0,1,7-3h0C1621,662,1623,665,1623,667Z" transform="translate(-317 -90)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+
+
+    <audio class="audswitch1on">
+            <source src="audio/heart.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="audswitch2on">
+            <source src="audio/heart.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="audswitch3on">
+            <source src="audio/heart.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="audswitch">
+            <source src="audio/electricity.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+
+    <script src="js/lab3.js"></script>
+
+
+</body>
+
+
+</html>

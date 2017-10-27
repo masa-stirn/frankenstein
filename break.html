@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .hide {
+            display: none;
+        }
+        .circle:before {
+    content:" ";
+    position:absolute;
+    width: 1000px;
+    height: 1000px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    border-radius:50%;
+    box-shadow:0 0px 0 850px #000;
+    opacity: 0;
+    animation: growcircle 1.5s linear;
+    z-index: 1000;
+}
+        @keyframes growcircle {
+            50%{
+                opacity: 0.8;
+            }
+            100%{
+                opacity: 1;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        .circle2:before {
+    content:" ";
+    position:absolute;
+    width: 1000px;
+    height: 1000px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    border-radius:50%;
+    box-shadow:0 0px 0 850px #000;
+    opacity: 1;
+    animation: growcircle2 1.5s linear reverse;
+    z-index: 1000;
+}
+        @keyframes growcircle2 {
+
+            100%{
+                opacity: 0.8;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        body {
+            margin:0;
+            padding:0;
+            background-image: url(images/background.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width:100vw;
+            height: 100vh;
+        }
+
+        .switch{
+            width: 30%;
+            height: auto;
+            cursor: pointer;
+
+
+        }
+        audio {
+            display: none;
+        }
+
+        .switch-glow {
+            animation: switchglow 2s forwards;
+        }
+
+        @keyframes switchglow {
+            to{
+                filter: drop-shadow(0px 0px 8px rgba(155,155,255,1));
+            }
+        }
+        .switches {
+                position: relative;
+                width: 40vw;
+                height: 20vh;
+                top: 20vh;
+                left: 10vw;
+                margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+        <div class="mylens"></div>
+        <div class="switches">
+         <img class="switch1up switch" src="images/switch-up.svg" alt="switch">
+        <img class="switch1down switch hide" src="images/switch-down.svg" alt="switch">
+         <img class="switch2up switch" src="images/switch-up.svg" alt="switch">
+        <img class="switch2down switch hide" src="images/switch-down.svg" alt="switch">
+         <img class="switch3up switch" src="images/switch-up.svg" alt="switch">
+        <img class="switch3down switch hide" src="images/switch-down.svg" alt="switch">
+        </div>
+
+
+    <audio class="audswitch1on">
+            <source src="audio/heart.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="audswitch2on">
+            <source src="audio/heart.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="audswitch3on">
+            <source src="audio/heart.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="audswitch">
+            <source src="audio/electricity.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+
+</html>
