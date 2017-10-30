@@ -6,11 +6,29 @@
     <title>Young Frankenstein Fart</title>
 
     <style>
-        body {
-            background-image: url(images/young-frankenstein-second-scene.jpg);
-            background-position: top;
+
+        .brick{
+            width: 100vw;
+            background-image: url(../images/bg.svg);
+            height: 88vh;
+            position: absolute;
+            top:0;
+            left:0;
             background-repeat: no-repeat;
             background-size: cover;
+            z-index: -100;
+        }
+        .floor{
+            background-image: url(../images/floor.jpg);
+            width: 100vw;
+            height: 12vh;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /*background-color: darkgray;*/
+            z-index: -100;
+        }
+        body {
             width: 100vw;
             opacity: 0;
             animation: show 1.5s forwards;
@@ -84,6 +102,8 @@
 
 <body>
     <div class="mylens"></div>
+    <div class="brick"></div>
+        <div class="floor"></div>
 
     <audio class="audfart">
             <source src="audio/fart.wav" type="audio/mpeg">

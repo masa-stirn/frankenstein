@@ -74,6 +74,10 @@ function showArrow(){
  document.getElementById("arrow1").setAttribute("filter", "url(#f3)");
      let linktolab1 = document.querySelector(".linktolab1");
      linktolab1.classList.remove("hide");
+     arrow.addEventListener("click", linkme)
+     function linkme(){
+         window.location.href = "../../lab1.html";
+     }
 }, 2000);}
 
 

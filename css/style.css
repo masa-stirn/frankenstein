@@ -15,7 +15,7 @@
     box-shadow:0 0px 0 850px #000;
     opacity: 0;
     animation: growcircle 1.5s linear;
-    z-index: 1000;
+    z-index: 2000;
 }
         @keyframes growcircle {
             50%{
@@ -42,7 +42,7 @@
     box-shadow:0 0px 0 850px #000;
     opacity: 0;
     animation: growcircle2 1.5s linear reverse;
-    z-index: 1000;
+    z-index: 2000;
 }
     @keyframes growcircle2 {
 
@@ -59,7 +59,7 @@
             height: 100vh;
         }
 
-        .switch{
+        .switch1up, .switch2up, .switch3up{
             cursor: pointer;
         }
         audio {
@@ -79,11 +79,12 @@
             }
         }*/
         svg {
+            position: absolute;
             width: 100vw;
-            height: 100vh;
-            top:0;
-            left:0;
+            bottom: 0;
+            height: auto;
             z-index: 1000;
+            max-height: 100vh;
         }
         .brick{
             width: 100vw;
