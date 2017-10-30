@@ -82,10 +82,17 @@ animation: igorslideout ease-out 1s forwards;
 }
 /*eyedrop animation*/
 .eyedrop {
- animation: movetobottom ease-out 2.5s forwards;
+ animation: movetobottom ease-out 2.5s .5s forwards;
 }
 @keyframes movetobottom {
     5%{
+ transform: translateX(7vw);
+ }
+    100%{
+      transform: translateX(7vw) translateY(210vh)
+    }
+
+ /*   5%{
  transform: translateX(7vw);
  }
  50% {
@@ -93,7 +100,7 @@ animation: igorslideout ease-out 1s forwards;
  }
 to{
  transform: translateX(50vw) translateY(50vh) rotate(360deg);
- }
+ }*/
 }
 
 /*eyeball roll animation

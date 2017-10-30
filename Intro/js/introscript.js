@@ -20,7 +20,7 @@ function pageLoad() {
      creature.classList.add("hide");
      igor.classList.add("hide");
   bgsound.play();
-    setTimeout(castleGlow, 1000);
+    setTimeout(castleGlow, 2000);
     function castleGlow(){
      console.log("castle glow")
  document.getElementById("castleglow").setAttribute("filter", "url(#f1)");
@@ -50,7 +50,9 @@ setTimeout(eyeballdrop, 5000);
 
 function eyeballdrop(){
     eyeball.classList.add("eyedrop");
-    popsound.play();
+    setTimeout(function(){
+        popsound.play();}
+        , 500);
 }
 
 eyeball.addEventListener("animationend", showArrow)
@@ -68,7 +70,7 @@ eyeball.addEventListener("animationend", showArrow)
 function showArrow(){
     setTimeout(function(){
     arrow.classList.remove("hide");
-}, 1000);
+}, 10);
 
  setTimeout(function(){
  document.getElementById("arrow1").setAttribute("filter", "url(#f3)");
@@ -78,7 +80,7 @@ function showArrow(){
      function linkme(){
          window.location.href = "../../lab1.html";
      }
-}, 2000);}
+}, 500);}
 
 
 pageLoad();

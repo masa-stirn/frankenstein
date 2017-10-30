@@ -1,0 +1,150 @@
+body{
+    margin: 0 0;
+    padding:0;
+    width:100vw;
+    height: 100vh;
+}
+.black{
+    position:absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.circle2:before {
+    content:" ";
+    position:absolute;
+    width: 1000px;
+    height: 1000px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    border-radius:50%;
+    box-shadow:0 0px 0 850px #000;
+    opacity: 0;
+    animation: growcircle2 1.5s linear reverse;
+    z-index: 1000;
+}
+    @keyframes growcircle2 {
+
+            100%{
+                opacity: 1;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+
+
+.titlefont{
+    background-image: url(../images/header.png);
+    width: 70vw;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 100;
+    position: absolute;
+}
+
+
+
+p{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 2.5vw;
+    z-index: 1200;
+
+}
+
+.credstyle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40vw;
+    height: 40vh;
+    }
+
+.creditsroll {
+animation: text-move 20s linear forwards;
+      }
+
+ @keyframes text-move {
+     0%
+                {
+                transform: translateY(100vh);
+                display:block;
+            }
+            to {
+                transform: translateY(-50vh);
+            }
+    }
+
+
+svg{
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+     height: auto;
+    z-index: 800;
+    max-height: 100vh;
+}
+
+.igorani{
+    animation: igorfade ease-out 1s forwards;
+}
+@keyframes igorfade {
+    from {
+     transform: translateY(130vh) scale(0.5);
+    opacity: 0;
+    }
+ to {
+     opacity: 1;
+     }
+}
+
+.doctorani{
+    animation: doctorfade ease-out 1s forwards;
+}
+@keyframes doctorfade {
+    from {
+     transform: translateX(150vh) scale(0.5);
+    opacity: 0;
+    }
+ to {
+     opacity: 1;
+     }
+}
+
+.creatureani{
+    animation: creaturefade ease-out 1s forwards;
+}
+@keyframes creaturefade {
+    from {
+     transform: translateX(150vh) scale(0.5);
+    opacity: 0;
+    }
+ to {
+     opacity: 1;
+     }
+}
+
+.scalemeup {
+    animation: scaleme 5s forwards;
+}
+
+@keyframes scaleme {
+    from {
+     transform: scale(0.1);
+    }
+ to {
+     transform: scale(1);
+     }
+}
