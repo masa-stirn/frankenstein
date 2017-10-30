@@ -13,52 +13,50 @@ let myLens = document.querySelector(".mylens");
         let audswitch = document.querySelector(".audswitch");
 
         function pageLoad(){
-            //play profesor say switch one on
-            audswitch1on.play();
-            console.log("play aud 1");
-            //profesor mouth animation
+            //profesor slides in
             let prof1 = document.querySelector(".professor1");
             let prof2 = document.querySelector(".professor2");
-            prof1.classList.add("hide")
-            prof2.classList.remove("hide")
+            prof1.classList.add("slideRight")
+
+            //play profesor say switch one on
             setTimeout(function(){
-            prof2.classList.add("hide")
-            prof1.classList.remove("hide")
-            }, 100);
-            setTimeout(function(){
-            prof1.classList.add("hide")
-            prof2.classList.remove("hide")
-            }, 400);
-            setTimeout(function(){
-            prof2.classList.add("hide")
-            prof1.classList.remove("hide")
-            }, 700);
-            setTimeout(function(){
-            prof1.classList.add("hide")
-            prof2.classList.remove("hide")
-            }, 1000);
-            setTimeout(function(){
-            prof2.classList.add("hide")
-            prof1.classList.remove("hide")
+            prof1.classList.remove("slideRight")
+            audswitch1on.play();
+            console.log("play aud 1");
             }, 1300);
-             setTimeout(function(){
-            prof1.classList.add("hide")
-            prof2.classList.remove("hide")
-            }, 1600);
+
+            //profesor mouth animation
             setTimeout(function(){
             prof2.classList.add("hide")
             prof1.classList.remove("hide")
-            }, 1900);
+            }, 1100);
+            setTimeout(function(){
+            prof1.classList.add("hide")
+            prof2.classList.remove("hide")
+            }, 1400);
+            setTimeout(function(){
+            prof2.classList.add("hide")
+            prof1.classList.remove("hide")
+            }, 1700);
+            setTimeout(function(){
+            prof1.classList.add("hide")
+            prof2.classList.remove("hide")
+            }, 2000);
+            setTimeout(function(){
+            prof2.classList.add("hide")
+            prof1.classList.remove("hide")
+            }, 2300);
              setTimeout(function(){
             prof1.classList.add("hide")
             prof2.classList.remove("hide")
-            }, 2100);
+            }, 2600);
+
             //make glow of switch one
             let rect1glow = document.querySelector("#rect1glow");
             let pull1glow = document.querySelector("#pull1glow");
            setTimeout(function(){
         document.getElementById("pull1glow").setAttribute("filter","url(#f2)")
-               document.getElementById("rect1glow").setAttribute("filter", "url(#f1)") }, 1200);
+               document.getElementById("rect1glow").setAttribute("filter", "url(#f1)") }, 3300);
             console.log("glow");
         }
 

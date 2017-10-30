@@ -96,6 +96,37 @@
                 height: 10px;
             }
         }
+        .creature {
+            position: absolute;
+            background: gray;
+            width: 55vw;
+            height:70vh;
+            bottom: 0;
+            left: 0;
+            right:0;
+            margin: auto;
+        }
+
+        .creatureglow{
+    animation: heglow 2s forwards;
+}
+
+@keyframes heglow{
+    100%{
+        filter: drop-shadow(0px 5px 18px rgba(40, 0, 255, 1));
+    }
+}
+
+        .creature2 {
+            position: absolute;
+            background: darkgray;
+            width: 55vw;
+            height:80vh;
+            bottom: 0;
+            left: 0;
+            right:0;
+            margin: auto;
+        }
 
     </style>
 </head>
@@ -103,8 +134,22 @@
 <body>
     <div class="mylens"></div>
     <div class="brick"></div>
-        <div class="floor"></div>
+    <div class="floor"></div>
+    <div class="creature"></div>
+    <div class="creature2"></div>
 
+    <audio class="givelife">
+            <source src="audio/life_audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="heart" loop>
+            <source src="audio/heart.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <audio class="breathing">
+            <source src="audio/" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
     <audio class="audfart">
             <source src="audio/fart.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -113,15 +158,10 @@
             <source src="audio/mmmm.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
     </audio>
-    <audio class="audmine">
-            <source src="audio/audmine.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-    </audio>
-
-
     <script>
         let myLens = document.querySelector(".mylens");
         let creature = document.querySelector(".creature");
+        let creature2 = document.querySelector(".creature2");
         let audfart = document.querySelector(".audfart")
 
         function pageLoad(){
@@ -132,10 +172,25 @@
         function spriteFart(){
             console.log("remove circle2");
             myLens.classList.remove("circle2")
+            creature.classList.add("creatureglow");
+            let givelife = document.querySelector(".givelife")
+            givelife.play();
+            givelife.addEventListener("ended", function(){
+            creature.classList.remove("creatureglow");
+            let heart = document.querySelector(".heart");
+            heart.play();
+            creature.classList.add("hide");
+            creature2.classList.remove("hide")
+            setTimeout(function(){
+            creature.classList.add("hide");
+            creature2.classList.remove("hide")
+            }, 100);
+            })
+
             /*creature.classList.add(".creature-sprite")*/
             setTimeout(function(){
             audfart.play();
-            }, 1500);
+            }, 20500);
             /*setTimeout(function(){
             let audmmm = document.querySelector(".audmmm")
             audmmm.play();
@@ -151,7 +206,7 @@
         function lens() {
             console.log("add circle");
         myLens.classList.add("circle")
-            setTimeout(function(){
+           setTimeout(function(){
                 window.location.href = "lab2.html";
             }, 1500);
         }
