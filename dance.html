@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
         }
 
 
-        .circle:before {
+    .circle:before {
     content:" ";
     position:absolute;
     width: 1000px;
@@ -84,23 +84,23 @@
 
 
     <audio class="bgmusic">
-            <source src="audio/bgmusic.wav" type="audio/mpeg">
+            <source src="audio/dance_routine.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
     </audio>
     <audio class="woop">
             <source src="audio/woop.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
     </audio>
-     <audio class="wow">
-            <source src="audio/wow.wav" type="audio/mpeg">
+    <audio class="laughter">
+            <source src="audio/audience_laughing.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
     </audio>
-    <audio class="laughter">
-            <source src="audio/laughter.wav" type="audio/mpeg">
+    <audio class="booing">
+            <source src="audio/booing.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
     </audio>
     <audio class="safety">
-            <source src="audio/safety.wav" type="audio/mpeg">
+            <source src="audio/heart.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
     </audio>
 
@@ -109,6 +109,7 @@
     <script>
         let myLens = document.querySelector(".mylens");
         let creature = document.querySelector(".creature");
+        let safety = document.querySelector(".safety")
 
         function pageLoad(){
             myLens.classList.add("circle2")
@@ -119,41 +120,31 @@
         myLens.addEventListener("animationend", spriteFart)
 
         function spriteFart(){
-            creature.classList.add(".creature-sprite")
-            setTimeout(function(){
+            /*creature.classList.add(".creature-sprite")*/
             let bgmusic = document.querySelector(".bgmusic")
             bgmusic.play();
-            }, 3500);
-            setTimeout(function(){
+
+            bgmusic.addEventListener('ended', function(){
             let woop = document.querySelector(".woop")
             woop.play();
-            }, 3800);
-            setTimeout(function(){
-            let wow = document.querySelector(".wow")
-            wow.play();
-            }, 3900);
+            });
             setTimeout(function(){
             let laughter = document.querySelector(".laughter")
             laughter.play();
             //code for the throwing paper
-            }, 4100);
+            }, 20000);
             setTimeout(function(){
-            let safety = document.querySelector(".safety")
             safety.play();
-            //code for the throwing paper
-            }, 4200);
+            }, 25200);
         }
 
-
-             /*
         safety.addEventListener('ended', lens);
-
         function lens() {
         myLens.classList.add("circle")
             setTimeout(function(){
-                window.location.href = "lab2.html";
+                window.location.href = "lab3.html";
             }, 1500);
-        }*/
+        }
 
         pageLoad();
 

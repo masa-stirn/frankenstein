@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Young Frankenstein Fart</title>
+    <title>Young Frankenstein Scream</title>
 
     <style>
 
@@ -103,32 +103,20 @@
             bottom: 0;
             left: 0;
             right:0;
+            top:0;
             margin: auto;
         }
 
-        .creatureglow{
-    animation: heglow 2s forwards;
-}
-
-@keyframes heglow{
-    100%{
-        filter: drop-shadow(0px 5px 18px rgba(40, 0, 255, 1));
-    }
-}
-
-        .creature2 {
-            position: absolute;
-            width: 80vw;
-            height:70vh;
-            bottom: 0;
-            left: 0;
-            right:0;
-            margin: auto;
+        .creaturegrow{
+            animation: grow 4s forwards;
         }
 
-        .hide {
-            display: none;
+        @keyframes grow {
+            to{
+                transform: scale(4);
+            }
         }
+
 
     </style>
 </head>
@@ -138,34 +126,15 @@
     <div class="brick"></div>
     <div class="floor"></div>
     <img class="creature" src="images/creation_side_breathe1.svg" alt="creature being brought to life">
-    <img class="creature2 hide" src="images/creation_side_breathe2.svg" alt="creature being brought to life">
 
-    <audio class="givelife">
-            <source src="audio/life_audio.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-    </audio>
-    <audio class="heart" loop>
-            <source src="audio/heart.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-    </audio>
-    <audio class="breathing">
-            <source src="audio/" type="audio/mpeg">
-                Your browser does not support the audio element.
-    </audio>
-    <audio class="audfart">
-            <source src="audio/fart.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-    </audio>
-    <audio class="audmmm">
-            <source src="audio/mmm_audio.mp3" type="audio/mpeg">
+    <audio class="argh">
+            <source src="audio/creature_roar.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
     </audio>
     <script>
         let myLens = document.querySelector(".mylens");
         let creature = document.querySelector(".creature");
-        let creature2 = document.querySelector(".creature2");
-        let audfart = document.querySelector(".audfart");
-        let audmmm = document.querySelector(".audmmm");
+        let argh = document.querySelector(".argh");
 
         window.addEventListener("load",firstEvent)
 
@@ -177,62 +146,19 @@
         function spriteLife(){
             console.log("remove circle2");
             myLens.classList.remove("circle2")
-            let givelife = document.querySelector(".givelife")
-            givelife.play();
+            argh.play();
             setTimeout(function(){
-            creature.classList.add("creatureglow");
+            creature.classList.add("creaturegrow");
             }, 1000);
-            givelife.addEventListener("ended", endglow);
-            function endglow(){
-            creature.classList.remove("creatureglow");
 
-            let heart = document.querySelector(".heart");
-
-            heart.play();
-            console.log("first beat")
-            creature2.classList.remove("hide");
-            setTimeout(function(){
-            creature2.classList.add("hide");
-            }, 500);
-            setTimeout(function(){
-            console.log("second beat")
-            creature2.classList.remove("hide");
-            }, 900);
-            setTimeout(function(){
-            creature2.classList.add("hide");
-            }, 1400);
-            setTimeout(function(){
-            console.log("third beat")
-            creature2.classList.remove("hide");
-            }, 1900);
-            setTimeout(function(){
-            creature2.classList.add("hide");
-            }, 2400);
-            setTimeout(function(){
-            console.log("fourth beat")
-            creature2.classList.remove("hide");
-            }, 2900);
-            setTimeout(function(){
-            console.log("stop heart beat")
-            heart.pause();
-            creature2.classList.add("hide");
-            }, 3300);
-            }
-
-            /*creature.classList.add(".creature-sprite")*/
-            setTimeout(function(){
-            audfart.play();
-            audmmm.play();
-            }, 20500);
         }
-
-        audmmm.addEventListener('ended', lens);
+        argh.addEventListener('ended', lens);
 
         function lens() {
-            console.log("add circle");
+        console.log("add circle");
         myLens.classList.add("circle")
            setTimeout(function(){
-                window.location.href = "lab2.html";
+            window.location.href = "credits/credits.html";
             }, 1500);
         }
 

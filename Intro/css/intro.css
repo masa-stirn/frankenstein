@@ -86,10 +86,10 @@ animation: igorslideout ease-out 1s forwards;
 }
 @keyframes movetobottom {
     5%{
- transform: translateX(7vw);
+ transform: translateX(7vw) translateY(20vh);
  }
     100%{
-      transform: translateX(7vw) translateY(210vh)
+      transform: translateX(30vw) translateY(210vh)
     }
 
  /*   5%{

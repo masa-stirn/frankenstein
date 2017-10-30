@@ -48,19 +48,27 @@ let myLens = document.querySelector(".mylens");
             setTimeout(function(){
             prof2.classList.add("hide")
             prof1.classList.remove("hide")
-            }, 3600);
+            }, 5600);
              setTimeout(function(){
             prof1.classList.add("hide")
             prof2.classList.remove("hide")
-            }, 3900);
+            }, 5900);
             setTimeout(function(){
             prof2.classList.add("hide")
             prof1.classList.remove("hide")
-            }, 4200);
+            }, 6200);
              setTimeout(function(){
             prof1.classList.add("hide")
             prof2.classList.remove("hide")
-            }, 4500);
+            }, 6500);
+             setTimeout(function(){
+            prof2.classList.add("hide")
+            prof1.classList.remove("hide")
+            }, 6900);
+             setTimeout(function(){
+            prof1.classList.add("hide")
+            prof2.classList.remove("hide")
+            }, 7200);
             //make glow of switch two
             let rect3glow = document.querySelector("#rect3glow");
             let pull3glow = document.querySelector("#pull3glow");
