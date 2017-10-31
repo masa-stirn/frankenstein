@@ -130,23 +130,14 @@
             display: none;
         }
 
-        .sprite1 {
+        .creatures {
             position: absolute;
-            width: 423px;
-            height:405px;
+            width: 80vw;
+            height:70vh;
             bottom: 0;
             left: 0;
             right:0;
             margin: auto;
-            background-image: url(images/fart_scene_sprite1.png);
-            background-position: 0 0;
-            animation: sprite 1.5s alternate steps(15);
-        }
-
-        @keyframes sprite {
-            100%{
-                background-position: -6344px 0;
-            }
         }
 
     </style>
@@ -156,9 +147,14 @@
     <div class="mylens"></div>
     <div class="brick"></div>
     <div class="floor"></div>
-    <img class="creature" src="images/breath1.svg" alt="creature being brought to life">
-    <img class="creature2 hide" src="images/breath2.svg" alt="creature being brought to life">
-    <div class="sprite1"></div>
+    <img class="creature" src="images/fartescene/breath1-01.svg" alt="creature being brought to life">
+    <img class="creature2 hide" src="images/fartescene/breath2-01.svg" alt="creature being brought to life">
+    <img class="creature3 hide creatures" src="images/fartescene/fart1-01.svg" alt="creature being brought to life">
+    <img class="creature4 hide creatures" src="images/fartescene/fart2-01.svg" alt="creature being brought to life">
+    <img class="creature5 hide creatures" src="images/fartescene/fart3-01.svg" alt="creature being brought to life">
+    <img class="creature6 hide creatures" src="images/fartescene/fart4-01.svg" alt="creature being brought to life">
+    <img class="creature7 hide creatures" src="images/fartescene/fart5-01.svg" alt="creature being brought to life">
+    <img class="creature8 hide creatures" src="images/fartescene/fart6-01.svg" alt="creature being brought to life">
 
     <audio class="givelife">
             <source src="audio/life_audio.mp3" type="audio/mpeg">
@@ -184,6 +180,12 @@
         let myLens = document.querySelector(".mylens");
         let creature = document.querySelector(".creature");
         let creature2 = document.querySelector(".creature2");
+        let creature3 = document.querySelector(".creature3");
+        let creature4 = document.querySelector(".creature4");
+        let creature5 = document.querySelector(".creature5");
+        let creature6 = document.querySelector(".creature6");
+        let creature7 = document.querySelector(".creature7");
+        let creature8 = document.querySelector(".creature8");
         let audfart = document.querySelector(".audfart");
         let audmmm = document.querySelector(".audmmm");
 
@@ -238,12 +240,97 @@
             creature2.classList.add("hide");
             }, 3300);
             }
+            givelife.addEventListener("ended", fartysceen);
 
-            /*creature.classList.add(".creature-sprite")*/
+            /*creature farts*/
+            function fartysceen (){
+            creature.classList.add("hide");
+            creature3.classList.remove("hide");
             setTimeout(function(){
+            console.log("second fart")
+            creature.classList.add("hide");
+            creature2.classList.add("hide");
+            creature3.classList.add("hide");
+            creature4.classList.remove("hide");
+            }, 5000);
+            setTimeout(function(){
+            creature.classList.add("hide");
+            creature2.classList.add("hide");
+            creature3.classList.add("hide");
+            creature4.classList.add("hide");
+            creature5.classList.remove("hide");
+            }, 5500);
+            setTimeout(function(){
+            console.log("third fart")
+            creature.classList.add("hide");
+            creature2.classList.add("hide");
+            creature3.classList.add("hide");
+            creature4.classList.add("hide");
+            creature5.classList.add("hide");
+            creature6.classList.remove("hide");
             audfart.play();
+            }, 6000);
+            setTimeout(function(){
+            creature.classList.add("hide");
+            creature2.classList.add("hide");
+            creature3.classList.add("hide");
+            creature4.classList.add("hide");
+            creature5.classList.add("hide");
+            creature6.classList.add("hide");
+            creature7.classList.remove("hide");
+            }, 6500);
+            setTimeout(function(){
+            creature.classList.add("hide");
+            creature2.classList.add("hide");
+            creature3.classList.add("hide");
+            creature4.classList.add("hide");
+            creature5.classList.add("hide");
+            creature6.classList.add("hide");
+            creature7.classList.add("hide");
+            creature8.classList.remove("hide");
+            }, 7000);
+            setTimeout(function(){
+            creature.classList.add("hide");
+            creature2.classList.add("hide");
+            creature3.classList.add("hide");
+            creature4.classList.add("hide");
+            creature5.classList.add("hide");
+            creature6.classList.add("hide");
+            creature7.classList.add("hide");
+            creature8.classList.remove("hide");
             audmmm.play();
-            }, 20500);
+            }, 7500);
+            setTimeout(function(){
+            creature.classList.add("hide");
+            creature2.classList.remove("hide");
+            creature3.classList.add("hide");
+            creature4.classList.add("hide");
+            creature5.classList.add("hide");
+            creature6.classList.add("hide");
+            creature7.classList.add("hide");
+            creature8.classList.add("hide");
+            }, 8000);
+            setTimeout(function(){
+            creature.classList.add("hide");
+            creature2.classList.remove("hide");
+            creature3.classList.add("hide");
+            creature4.classList.add("hide");
+            creature5.classList.add("hide");
+            creature6.classList.add("hide");
+            creature7.classList.add("hide");
+            creature8.classList.add("hide");
+            }, 8500);
+            setTimeout(function(){
+            creature.classList.remove("hide");
+            creature2.classList.add("hide");
+            creature3.classList.add("hide");
+            creature4.classList.add("hide");
+            creature5.classList.add("hide");
+            creature6.classList.add("hide");
+            creature7.classList.add("hide");
+            creature8.classList.add("hide");
+            }, 9500);
+        }
         }
 
         audmmm.addEventListener('ended', lens);
