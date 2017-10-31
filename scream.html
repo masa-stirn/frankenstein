@@ -103,7 +103,6 @@
             bottom: 0;
             left: 0;
             right:0;
-            top:0;
             margin: auto;
         }
 
@@ -112,8 +111,14 @@
         }
 
         @keyframes grow {
+            10%{
+                transform: translateY(40vh) scale(3) rotate(10deg);
+            }
+            20%{
+                transform: translateY(70vh) scale(4) rotate(-10deg);
+            }
             to{
-                transform: scale(4);
+                transform: translateY(220vh) scale(12);
             }
         }
 
@@ -125,7 +130,7 @@
     <div class="mylens"></div>
     <div class="brick"></div>
     <div class="floor"></div>
-    <img class="creature" src="images/creation_side_breathe1.svg" alt="creature being brought to life">
+    <img class="creature" src="images/scream.svg" alt="creature being brought to life">
 
     <audio class="argh">
             <source src="audio/creature_roar.mp3" type="audio/mpeg">

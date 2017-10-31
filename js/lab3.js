@@ -89,7 +89,7 @@ let myLens = document.querySelector(".mylens");
         function lens() {
         myLens.classList.add("circle")
             setTimeout(function(){
-            window.location.href = "fart.html";
+            window.location.href = "scream.html";
             }, 1500);
         }
 

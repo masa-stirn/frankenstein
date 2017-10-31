@@ -130,6 +130,25 @@
             display: none;
         }
 
+        .sprite1 {
+            position: absolute;
+            width: 423px;
+            height:405px;
+            bottom: 0;
+            left: 0;
+            right:0;
+            margin: auto;
+            background-image: url(images/fart_scene_sprite1.png);
+            background-position: 0 0;
+            animation: sprite 1.5s alternate steps(15);
+        }
+
+        @keyframes sprite {
+            100%{
+                background-position: -6344px 0;
+            }
+        }
+
     </style>
 </head>
 
@@ -137,8 +156,9 @@
     <div class="mylens"></div>
     <div class="brick"></div>
     <div class="floor"></div>
-    <img class="creature" src="images/creation_side_breathe1.svg" alt="creature being brought to life">
-    <img class="creature2 hide" src="images/creation_side_breathe2.svg" alt="creature being brought to life">
+    <img class="creature" src="images/breath1.svg" alt="creature being brought to life">
+    <img class="creature2 hide" src="images/breath2.svg" alt="creature being brought to life">
+    <div class="sprite1"></div>
 
     <audio class="givelife">
             <source src="audio/life_audio.mp3" type="audio/mpeg">

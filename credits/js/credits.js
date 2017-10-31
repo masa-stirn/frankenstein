@@ -15,12 +15,15 @@ let igor = document.querySelector("#igor");
              scale.classList.remove("scalemeup")
             }, 5001);
             setTimeout(function(){
+            doctor.classList.remove("hide")
             doctor.classList.add("doctorani")
             }, 5002);
             setTimeout(function(){
+            creature.classList.remove("hide")
             creature.classList.add("creatureani")
             }, 5002);
             setTimeout(function(){
+            igor.classList.remove("hide")
             igor.classList.add("igorani")
             }, 5002);
         }
