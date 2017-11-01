@@ -50,9 +50,7 @@ setTimeout(eyeballdrop, 5000);
 
 function eyeballdrop(){
     eyeball.classList.add("eyedrop");
-    setTimeout(function(){
-        popsound.play();}
-        , 500);
+    popsound.play()
 }
 
 eyeball.addEventListener("animationend", showArrow)
