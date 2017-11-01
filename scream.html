@@ -62,8 +62,8 @@
             }
             100%{
                 opacity: 1;
-                width: 250px;
-                height: 250px;
+                width: 50px;
+                height: 50px;
             }
         }
 
@@ -96,31 +96,36 @@
                 height: 10px;
             }
         }
+
         .creature {
+            width:100vw;
+            height: 100vh;
+            background:url(/images/scream.gif);
+            background-repeat:no-repeat !important;
+            background-size: cover !important;
+            background-position:center center !important;
             position: absolute;
-            width: 80vw;
-            height:70vh;
             bottom: 0;
             left: 0;
             right:0;
             margin: auto;
         }
 
-        .creaturegrow{
+        /*.creaturegrow{
             animation: grow 4s forwards;
         }
 
         @keyframes grow {
             10%{
-                transform: translateY(40vh) scale(3) rotate(10deg);
+                transform: translateY(40vh) scale(3);
             }
             20%{
-                transform: translateY(70vh) scale(4) rotate(-10deg);
+                transform: translateY(70vh) scale(4);
             }
             to{
                 transform: translateY(220vh) scale(12);
             }
-        }
+        }*/
 
 
     </style>
@@ -130,7 +135,7 @@
     <div class="mylens"></div>
     <div class="brick"></div>
     <div class="floor"></div>
-    <img class="creature" src="images/rasterizedfrankenstein.svg" alt="creature being brought to life">
+    <div class="creature"></div>
 
     <audio class="argh">
             <source src="audio/creature_roar.mp3" type="audio/mpeg">
@@ -152,9 +157,6 @@
             console.log("remove circle2");
             myLens.classList.remove("circle2")
             argh.play();
-            setTimeout(function(){
-            creature.classList.add("creaturegrow");
-            }, 1000);
 
         }
         argh.addEventListener('ended', lens);
