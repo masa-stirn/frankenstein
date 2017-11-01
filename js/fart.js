@@ -160,7 +160,7 @@ let myLens = document.querySelector(".mylens");
             console.log("add circle");
         myLens.classList.add("circle")
            setTimeout(function(){
-                window.location.href = "../lab2.html";
+                window.location.href = "lab2.html";
             }, 1500);
         }
 
