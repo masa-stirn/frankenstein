@@ -17,7 +17,6 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    /*background-color: darkgray;*/
     z-index: -100;
 }
 
@@ -56,8 +55,8 @@ body {
     }
     100% {
         opacity: 1;
-        width: 250px;
-        height: 250px;
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -93,43 +92,13 @@ body {
 }
 
 .creature {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/scream.gif);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
     position: absolute;
-    width: 80vw;
-    height: 70vh;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.creatureglow {
-    animation: heglow 2s forwards;
-}
-
-@keyframes heglow {
-    100% {
-        filter: drop-shadow(0px 5px 18px rgba(40, 0, 255, 1));
-    }
-}
-
-.creature2 {
-    position: absolute;
-    width: 80vw;
-    height: 70vh;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.hide {
-    display: none;
-}
-
-.creatures {
-    position: absolute;
-    width: 80vw;
-    height: 70vh;
     bottom: 0;
     left: 0;
     right: 0;
