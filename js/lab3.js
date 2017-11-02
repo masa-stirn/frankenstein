@@ -90,7 +90,7 @@ let myLens = document.querySelector(".mylens");
         myLens.classList.add("circle")
             setTimeout(function(){
             window.location.href = "scream.html";
-            }, 1500);
+            }, 1400);
         }
 
-        pageLoad();
+        window.addEventListener("load", pageLoad);

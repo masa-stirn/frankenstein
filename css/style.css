@@ -57,6 +57,7 @@
             padding:0;
             width:100vw;
             height: 100vh;
+            background-image: black;
         }
 
         .switch1up, .switch2up, .switch3up{

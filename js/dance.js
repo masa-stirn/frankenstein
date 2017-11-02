@@ -15,6 +15,10 @@ function spriteFart() {
     let bgmusic = document.querySelector(".bgmusic")
 
     bgmusic.play();
+
+
+
+
     setTimeout(function () {
         prof2.classList.remove("hide");
     }, 500);
@@ -972,8 +976,9 @@ safety.addEventListener('ended', lens);
 function lens() {
     myLens.classList.add("circle")
     setTimeout(function () {
-        window.location.href = "../lab3.html";
-    }, 500);
+        window.location.href = "lab3.html";
+    }, 1400);
 }
 
-pageLoad();
+window.addEventListener("load", pageLoad);
+

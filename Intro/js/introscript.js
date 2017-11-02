@@ -76,9 +76,8 @@ function showArrow(){
      linktolab1.classList.remove("hide");
      arrow.addEventListener("click", linkme)
      function linkme(){
-         window.location.href = "../../lab1.html";
+         window.location.href = "../lab1.html";
      }
 }, 500);}
 
-
-pageLoad();
+window.addEventListener("load", pageLoad);

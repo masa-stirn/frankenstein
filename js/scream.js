@@ -20,6 +20,6 @@ let myLens = document.querySelector(".mylens");
         console.log("add circle");
         myLens.classList.add("circle")
            setTimeout(function(){
-            window.location.href = "../credits/credits.html";
-            }, 1500);
+            window.location.href = "credits/credits.html";
+            }, 1400);
         }
