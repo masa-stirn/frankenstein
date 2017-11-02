@@ -45,30 +45,6 @@ let myLens = document.querySelector(".mylens");
             prof1.classList.add("hide")
             prof2.classList.remove("hide")
             }, 3300);
-            setTimeout(function(){
-            prof2.classList.add("hide")
-            prof1.classList.remove("hide")
-            }, 5600);
-             setTimeout(function(){
-            prof1.classList.add("hide")
-            prof2.classList.remove("hide")
-            }, 5900);
-            setTimeout(function(){
-            prof2.classList.add("hide")
-            prof1.classList.remove("hide")
-            }, 6200);
-             setTimeout(function(){
-            prof1.classList.add("hide")
-            prof2.classList.remove("hide")
-            }, 6500);
-             setTimeout(function(){
-            prof2.classList.add("hide")
-            prof1.classList.remove("hide")
-            }, 6900);
-             setTimeout(function(){
-            prof1.classList.add("hide")
-            prof2.classList.remove("hide")
-            }, 7200);
             //make glow of switch two
             let rect3glow = document.querySelector("#rect3glow");
             let pull3glow = document.querySelector("#pull3glow");
@@ -88,7 +64,7 @@ let myLens = document.querySelector(".mylens");
         myLens.classList.add("circle")
             setTimeout(function(){
             window.location.href = "scream.html";
-            }, 1400);
+            }, 1200);
         }
 
         pageLoad();

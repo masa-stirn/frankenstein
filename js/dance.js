@@ -732,7 +732,7 @@ function lens() {
     myLens.classList.add("circle")
     setTimeout(function () {
         window.location.href = "lab3.html";
-    }, 1400);
+    }, 1200);
 }
 
 pageLoad();

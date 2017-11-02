@@ -19,7 +19,7 @@ let myLens = document.querySelector(".mylens");
         myLens.classList.add("circle")
            setTimeout(function(){
             window.location.href = "credits/credits.html";
-            }, 1400);
+            }, 1200);
         }
 
 pageLoad();
