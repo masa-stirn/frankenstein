@@ -73,11 +73,10 @@ let myLens = document.querySelector(".mylens");
             let rect3glow = document.querySelector("#rect3glow");
             let pull3glow = document.querySelector("#pull3glow");
            setTimeout(function(){
-        document.getElementById("pull3glow").setAttribute("filter","url(#f2)")
+               document.getElementById("pull3glow").setAttribute("filter","url(#f2)")
                document.getElementById("rect3glow").setAttribute("filter", "url(#f1)") }, 1200);
             console.log("glow");
         }
-
             switch3up.addEventListener("click",function(){
                 audswitch.play();
                 switch3up.classList.add("hide")
@@ -85,7 +84,6 @@ let myLens = document.querySelector(".mylens");
             })
 
         audswitch.addEventListener('ended', lens);
-
         function lens() {
         myLens.classList.add("circle")
             setTimeout(function(){
@@ -93,4 +91,4 @@ let myLens = document.querySelector(".mylens");
             }, 1400);
         }
 
-        window.addEventListener("load", pageLoad);
+        pageLoad();

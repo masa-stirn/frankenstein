@@ -10,28 +10,25 @@ function pageLoad() {
     myLens.classList.add("circle2")
 }
 myLens.addEventListener("animationend", spriteFart)
-
 function spriteFart() {
     let bgmusic = document.querySelector(".bgmusic")
-
     bgmusic.play();
-
-    for(let i = 500; i<4200; i+=100){
+    for(let i = 500; i<4100; i+=100){
         setTimeout(function(){
             prof2.classList.toggle("hide");
         }, i) }
 
-    for(let i = 4900; i<7900; i+=100){
+    for(let i = 4900; i<7300; i+=100){
         setTimeout(function(){
             prof2.classList.toggle("hide");
         }, i) }
 
-    for(let i = 8200; i<8900; i+=100){
+    for(let i = 8300; i<8900; i+=100){
         setTimeout(function(){
             prof2.classList.toggle("hide");
         }, i) }
 
-    for(let i = 11000; i<11600; i+=100){
+    for(let i = 10800; i<11600; i+=100){
         setTimeout(function(){
             prof2.classList.toggle("hide");
         }, i) }
@@ -277,8 +274,6 @@ function spriteFart() {
         dances[4].classList.add("hide");
         dances[5].classList.remove("hide");
     }, 14900);
-
-
     setTimeout(function () {
         dances[5].classList.add("hide");
         dances[4].classList.remove("hide");
@@ -319,7 +314,6 @@ function spriteFart() {
         dances[4].classList.add("hide");
         dances[5].classList.remove("hide");
     }, 15400);
-
     setTimeout(function () {
         dances[5].classList.add("hide");
         dances[4].classList.remove("hide");
@@ -360,8 +354,6 @@ function spriteFart() {
         dances[4].classList.add("hide");
         dances[5].classList.remove("hide");
     }, 15900);
-
-
     setTimeout(function () {
         dances[5].classList.add("hide");
         dances[4].classList.remove("hide");
@@ -402,7 +394,6 @@ function spriteFart() {
         dances[4].classList.add("hide");
         dances[5].classList.remove("hide");
     }, 16400);
-
     setTimeout(function () {
         dances[5].classList.add("hide");
         dances[4].classList.remove("hide");
@@ -629,23 +620,13 @@ function spriteFart() {
         dances[18].classList.add("hide");
         dances[19].classList.remove("hide");
     }, 19200);
-
-
-    /*bgmusic.addEventListener('ended', function(){
-    let woop = document.querySelector(".woop")
-    woop.play();
-    });*/
     setTimeout(function () {
         let laughter = document.querySelector(".laughter")
         laughter.play();
-
     }, 17500);
-
     setTimeout(function () {
-
         prof1.classList.add("hide");
         prof3.classList.remove("hide");
-
         setTimeout(function () {
             prof3.classList.add("hide");
             prof4.classList.remove("hide");
@@ -739,27 +720,14 @@ function spriteFart() {
             prof4.classList.add("hide");
             prof3.classList.remove("hide");
         }, 4000);
-        /*setTimeout(function(){
-        prof3.classList.add("hide");
-        prof4.classList.remove("hide");
-        }, 4100);
-        setTimeout(function(){
-        prof4.classList.add("hide");
-        prof3.classList.remove("hide");
-        }, 4200);*/
         setTimeout(function () {
             prof3.classList.add("hide");
             prof4.classList.remove("hide");
         }, 4400);
-
-
-        //code for the throwing paper
         safety.play();
     }, 20800);
 }
-
 safety.addEventListener('ended', lens);
-
 function lens() {
     myLens.classList.add("circle")
     setTimeout(function () {
@@ -767,5 +735,5 @@ function lens() {
     }, 1400);
 }
 
-window.addEventListener("load", pageLoad);
+pageLoad();
 

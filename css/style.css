@@ -89,7 +89,7 @@
         }
         .brick{
             width: 100vw;
-            background-image: url(../images/bg.svg);
+            background-image: url(../images/bg.png);
             height: 88vh;
             position: absolute;
             top:0;
@@ -99,7 +99,7 @@
             z-index: -100;
         }
         .floor{
-            background-image: url(../images/floor.jpg);
+            background-image: url(../images/floor.png);
             width: 100vw;
             height: 12vh;
             position: absolute;
@@ -167,3 +167,35 @@
 		-webkit-transform: translateX(0%);
 	}
 }
+
+
+.speak-text p {
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    font-size: 2vw;
+    z-index: 1200;
+}
+
+/*.speak-text {
+   width: 20vw;
+   height: 10vh;
+   background: white;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+.speak-text:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid yellow;
+   border-bottom: 13px solid transparent;
+}*/
+
+

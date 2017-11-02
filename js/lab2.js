@@ -54,7 +54,6 @@ let myLens = document.querySelector(".mylens");
                document.getElementById("rect2glow").setAttribute("filter", "url(#f1)") }, 1200);
             console.log("glow");
         }
-
             switch2up.addEventListener("click",function(){
                 audswitch.play();
                 switch2up.classList.add("hide")
@@ -62,7 +61,6 @@ let myLens = document.querySelector(".mylens");
             })
 
         audswitch.addEventListener('ended', lens);
-
         function lens() {
         myLens.classList.add("circle")
             setTimeout(function(){
@@ -70,4 +68,4 @@ let myLens = document.querySelector(".mylens");
             }, 1400);
         }
 
-        window.addEventListener("load", pageLoad);
+        pageLoad();

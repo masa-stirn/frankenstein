@@ -1,6 +1,6 @@
 .brick {
     width: 100vw;
-    background-image: url(../images/bg.svg);
+    background-image: url(../images/bg.png);
     height: 88vh;
     position: absolute;
     top: 0;
@@ -11,7 +11,7 @@
 }
 
 .floor {
-    background-image: url(../images/floor.jpg);
+    background-image: url(../images/floor.png);
     width: 100vw;
     height: 12vh;
     position: absolute;

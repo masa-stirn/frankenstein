@@ -2,9 +2,7 @@ let myLens = document.querySelector(".mylens");
         let creature = document.querySelector(".creature");
         let argh = document.querySelector(".argh");
 
-        window.addEventListener("load",firstEvent)
-
-        function firstEvent(){
+        function pageLoad(){
         myLens.classList.add("circle2");
         }
         myLens.addEventListener("animationend", spriteLife)
@@ -23,3 +21,5 @@ let myLens = document.querySelector(".mylens");
             window.location.href = "credits/credits.html";
             }, 1400);
         }
+
+pageLoad();

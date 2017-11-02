@@ -76,4 +76,4 @@ let myLens = document.querySelector(".mylens");
             }, 1400);
         }
 
-        window.addEventListener("load", pageLoad);
+        pageLoad();
