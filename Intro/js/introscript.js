@@ -14,7 +14,6 @@ let rollsound = document.querySelector(".roll");
 
 
 
-
 function pageLoad() {
     professor.classList.add("hide");
      creature.classList.add("hide");
@@ -80,4 +79,4 @@ function showArrow(){
      }
 }, 500);}
 
-window.addEventListener("load", pageLoad);
+pageLoad();

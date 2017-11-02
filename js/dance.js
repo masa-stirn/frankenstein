@@ -16,238 +16,25 @@ function spriteFart() {
 
     bgmusic.play();
 
+    for(let i = 500; i<4200; i+=100){
+        setTimeout(function(){
+            prof2.classList.toggle("hide");
+        }, i) }
 
+    for(let i = 4900; i<7900; i+=100){
+        setTimeout(function(){
+            prof2.classList.toggle("hide");
+        }, i) }
 
+    for(let i = 8200; i<8900; i+=100){
+        setTimeout(function(){
+            prof2.classList.toggle("hide");
+        }, i) }
 
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 500);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 600);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 700);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 800);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 900);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 1000);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 1100);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 1200);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 1300);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 1400);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 1600);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 1800);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 2000);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 2100);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 2300);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 2500);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 2700);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 2900);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 3000);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 3100);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 3300);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 3500);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 3700);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 3900);
-    /*setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 4000);
-    setTimeout(function(){
-    prof2.classList.add("hide");
-    }, 4100);
-    setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 4200);
-    setTimeout(function(){
-    prof2.classList.add("hide");
-    }, 4400);
-    setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 4600);
-    setTimeout(function(){
-    prof2.classList.add("hide");
-    }, 4800);
-    setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 4900);*/
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 5000);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 5200);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 5400);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 5600);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 5800);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 5900);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 6000);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 6200);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 6400);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 6600);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 6800);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 6900);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 7000);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 7200);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 7400);
-    /*setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 7600);
-    setTimeout(function(){
-    prof2.classList.add("hide");
-    }, 7800);
-    setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 7900);
-    setTimeout(function(){
-    prof2.classList.add("hide");
-    }, 8000);*/
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 8200);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 8400);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 8600);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 8800);
-    /*setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 8900);
-    setTimeout(function(){
-    prof2.classList.add("hide");
-    }, 9000);
-    setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 9200);
-    setTimeout(function(){
-    prof2.classList.add("hide");
-    }, 9400);
-    setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 9600);
-    setTimeout(function(){
-    prof2.classList.add("hide");
-    }, 9800);
-    setTimeout(function(){
-    prof2.classList.remove("hide");
-    }, 9900);
-    setTimeout(function(){
-    prof2.classList.add("hide");
-    }, 10000);*/
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 10200);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 10400);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 10500);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 10600);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 10700);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 10800);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 10900);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 11000);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 11100);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 11200);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 11300);
-    setTimeout(function () {
-        prof2.classList.remove("hide");
-    }, 11400);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 11500);
-    setTimeout(function () {
-        prof2.classList.add("hide");
-    }, 11600);
-
+    for(let i = 11000; i<11600; i+=100){
+        setTimeout(function(){
+            prof2.classList.toggle("hide");
+        }, i) }
 
     setTimeout(function () {
         dances[0].classList.remove("hide");
@@ -862,11 +649,11 @@ function spriteFart() {
         setTimeout(function () {
             prof3.classList.add("hide");
             prof4.classList.remove("hide");
-        }, 200);
+        }, 300);
         setTimeout(function () {
             prof4.classList.add("hide");
             prof3.classList.remove("hide");
-        }, 400);
+        }, 500);
         setTimeout(function () {
             prof3.classList.add("hide");
             prof4.classList.remove("hide");
